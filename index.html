@@ -118,7 +118,7 @@
     </section>
 
     <section class="section intro">
-      <div class="wrap narrow">
+      <div class="wrap">
         <p class="eyebrow">auf ein Wort</p>
         <h2>Wohnen an der Mainschleife</h2>
         <p class="lead">direkt am Mainufer und dem Radweg nach Volkach</p>
@@ -155,7 +155,7 @@
       </div>
     </section>
 
-    <section id="auswahl" class="banner" style="--banner-image: url('img/flusspanorama.webp')">
+    <section id="auswahl" class="banner banner-auswahl">
       <div class="wrap">
         <p class="eyebrow">Möglichkeiten</p>
         <h2>Sie haben die Wahl</h2>
@@ -182,8 +182,10 @@
             <button class="zoom-btn" type="button" data-open-gallery>Vergrößern</button>
           </div>
           <div class="apartment-copy">
-            <p class="eyebrow">am Flussufer mit Mainblick</p>
-            <h2>Apartment Maingasse N&deg; 13</h2>
+            <div class="apartment-heading">
+              <h2>Apartment<br>Maingasse N&deg; 13</h2>
+              <p>am Flussufer mit Mainblick</p>
+            </div>
             <p>Für das ca. 40 m&sup2; große Apartment mit sonniger Dachterrasse/Loggia wurde das Dach einer ehemaligen Scheune umgebaut. Direkt am Mainufer gelegen bietet die Wohnung einen exklusiven Panoramablick auf den Fluss, die Mainwiesen und die gegenüberliegenden Weinberge.</p>
             <h3>Mietpreis für 2 Personen</h3>
             <ul>
@@ -228,8 +230,10 @@
             <button class="zoom-btn" type="button" data-open-gallery>Vergrößern</button>
           </div>
           <div class="apartment-copy">
-            <p class="eyebrow">am Mainufer und Radweg</p>
-            <h2>Ferienwohnung Maingasse N&deg; 05</h2>
+            <div class="apartment-heading">
+              <h2>Ferienwohnung<br>Maingasse N&deg; 05</h2>
+              <p>am Mainufer und Radweg</p>
+            </div>
             <p>Die ca. 50 m&sup2; große, sonnige Ferienwohnung II befindet sich im Dachgeschoss des Nachbarhauses in der Maingasse 5. Sie ist ebenfalls an der Mainfront gelegen, hat einen großen Südbalkon mit Blick auf den Fluss und den Fahrer Altort. Die Mainfähre ist nur einen Steinwurf entfernt.</p>
             <h3>Mietpreis für 2 Personen</h3>
             <ul>
@@ -257,7 +261,7 @@
       </div>
     </section>
 
-    <section id="buchung" class="banner" style="--banner-image: url('img/faehre.webp')">
+    <section id="buchung" class="banner banner-buchung">
       <div class="wrap">
         <p class="eyebrow">Buchung</p>
         <h2>Ihre Anfrage</h2>
@@ -270,44 +274,68 @@
         <form class="booking-form" action="formmail.php" method="post" name="Anfrage" id="form1">
           <div class="form-grid">
             <label>Wahl der Wohnung
-              <select name="Wohnung:">
-                <option value="Wohnungsauswahl"></option>
-                <option value="Apartment Nr13">Ferienapartment Maingasse N&deg; 13</option>
-                <option value="Fewo Nr5">Ferienwohnung Maingasse N&deg; 5</option>
-              </select>
+              <span class="form-field">
+                <i class="icon icon-home22" aria-hidden="true"></i>
+                <select name="Wohnung:">
+                  <option value="Wohnungsauswahl"></option>
+                  <option value="Apartment Nr13">Ferienapartment Maingasse N&deg; 13</option>
+                  <option value="Fewo Nr5">Ferienwohnung Maingasse N&deg; 5</option>
+                </select>
+              </span>
             </label>
-            <label>Anreise
-              <input type="date" id="arrival">
-            </label>
-            <label>Abreise
-              <input type="date" id="departure">
-            </label>
-            <input type="hidden" name="Buchungszeitraum:" id="booking-range">
+            <div class="date-range-field">
+              <label for="datepicker">Buchungszeitraum</label>
+              <span class="form-field">
+                <i class="icon icon-calendar" aria-hidden="true"></i>
+                <input type="text" name="Buchungszeitraum:" id="datepicker" placeholder="Verfügbarkeit im Belegungskalender prüfen" autocomplete="off" readonly>
+              </span>
+            </div>
             <label>Anzahl der Personen
-              <select name="Personenzahl:">
-                <option value="Personenzahl"></option>
-                <option value="1 Pers.">1 Person</option>
-                <option value="2 Pers.">2 Personen</option>
-                <option value="3 Pers.">3 Personen</option>
-              </select>
+              <span class="form-field">
+                <i class="icon icon-add-user" aria-hidden="true"></i>
+                <select name="Personenzahl:">
+                  <option value="Personenzahl"></option>
+                  <option value="1 Pers.">1 Person</option>
+                  <option value="2 Pers.">2 Personen</option>
+                  <option value="3 Pers.">3 Personen</option>
+                </select>
+              </span>
             </label>
-            <label>Name <span>*</span>
-              <input type="text" name="Name:" placeholder="Name" required>
+            <label><span class="label-caption">Name <small><sup class="required-mark">*</sup>(Pflichtangabe)</small></span>
+              <span class="form-field">
+                <i class="icon icon-user2" aria-hidden="true"></i>
+                <input type="text" name="Name:" placeholder="Name" required>
+              </span>
             </label>
-            <label>Email <span>*</span>
-              <input type="email" name="Email:" placeholder="Email Adresse" required>
+            <label><span class="label-caption">Email <small><sup class="required-mark">*</sup>(Pflichtangabe)</small></span>
+              <span class="form-field">
+                <i class="icon icon-mail" aria-hidden="true"></i>
+                <input type="email" name="Email:" placeholder="Email Adresse" required>
+              </span>
             </label>
             <label>Telefon
-              <input type="text" name="Telefon:" placeholder="Telefonnummer">
+              <span class="form-field">
+                <i class="icon icon-phone" aria-hidden="true"></i>
+                <input type="text" name="Telefon:" placeholder="Telefonnummer">
+              </span>
             </label>
             <label>Straße
-              <input type="text" name="Strasse:" placeholder="Straße">
+              <span class="form-field">
+                <i class="icon icon-address" aria-hidden="true"></i>
+                <input type="text" name="Strasse:" placeholder="Straße">
+              </span>
             </label>
             <label>PLZ / Wohnort
-              <input type="text" name="PLZ/Wohnort:" placeholder="PLZ / Wohnort">
+              <span class="form-field">
+                <i class="icon icon-location2" aria-hidden="true"></i>
+                <input type="text" name="PLZ/Wohnort:" placeholder="PLZ / Wohnort">
+              </span>
             </label>
             <label class="wide">Ihre Mitteilung
-              <textarea name="Nachricht:" rows="4" placeholder="fragen Sie uns"></textarea>
+              <span class="form-field form-field-textarea">
+                <i class="icon icon-edit" aria-hidden="true"></i>
+                <textarea name="Nachricht:" rows="4" placeholder="fragen Sie uns"></textarea>
+              </span>
             </label>
             <label class="honeypot">Mobile
               <input name="Mobile:" type="text" tabindex="-1" autocomplete="off">
@@ -324,35 +352,44 @@
       </div>
     </section>
 
-    <section id="galerie" class="banner" style="--banner-image: url('img/volkach-rathausplatz.webp')">
+    <section id="galerie" class="banner banner-galerie">
       <div class="wrap">
         <p class="eyebrow">Eindrücke</p>
         <h2>Galerien</h2>
       </div>
     </section>
 
-    <section class="section muted">
+    <section class="section muted gallery-overlap">
       <div class="wrap gallery-cards">
         <article>
           <button type="button" data-open-template="fahr-gallery">
             <img src="img/rast-an-faehre.webp" alt="Fahr am Main">
-            <span>Fahr am Main</span>
           </button>
-          <p>Muße finden, die Tage unaufgeregt im eigenen Rhythmus leben und die prächtige Landschaft des Maintals genießen.</p>
+          <div class="gallery-card-text">
+            <h3>Fahr am Main</h3>
+            <p>Muße finden, die Tage unaufgeregt im eigenen Rhythmus leben und die prächtige Landschaft des Maintals genießen.</p>
+            <button class="gallery-text-link" type="button" data-open-template="fahr-gallery">Galerie</button>
+          </div>
         </article>
         <article>
           <button type="button" data-open-template="volkach-gallery">
             <img src="img/volkach-rathaus.webp" alt="Marktplatz Volkach">
-            <span>Volkach</span>
           </button>
-          <p>Sich einlassen auf das lebendige Treiben in Gassen und Straßen und mit Wonne den vielfältigen Verlockungen erliegen.</p>
+          <div class="gallery-card-text">
+            <h3>Volkach</h3>
+            <p>Sich einlassen auf das lebendige Treiben in Gassen und Straßen und mit Wonne den vielfältigen Verlockungen erliegen.</p>
+            <button class="gallery-text-link" type="button" data-open-template="volkach-gallery">Galerie</button>
+          </div>
         </article>
         <article>
           <button type="button" data-open-template="expect-gallery">
             <img src="img/erwartung.webp" alt="Erlebnis Mainschleife">
-            <span>Was Sie erwartet</span>
           </button>
-          <p>Erstaunliche Begegnungen, unvermutete Augenblicke und eine Fülle sinnlicher Genüsse für Leib und Seele.</p>
+          <div class="gallery-card-text">
+            <h3>Was Sie erwartet</h3>
+            <p>Erstaunliche Begegnungen, unvermutete Augenblicke und eine Fülle sinnlicher Genüsse für Leib und Seele.</p>
+            <button class="gallery-text-link" type="button" data-open-template="expect-gallery">Galerie</button>
+          </div>
         </article>
       </div>
     </section>

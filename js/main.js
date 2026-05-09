@@ -8,18 +8,60 @@
     const slides = Array.from(root.querySelectorAll(':scope > .slide'));
     if (!slides.length) return;
 
+    root.querySelector(':scope > .carousel-bullets')?.remove();
+
     let index = Math.max(0, slides.findIndex((slide) => slide.classList.contains('is-active')));
     if (index < 0) index = 0;
-    slides.forEach((slide, slideIndex) => slide.classList.toggle('is-active', slideIndex === index));
+
+    const bullets = slides.map((slide, slideIndex) => {
+      const button = document.createElement('button');
+      button.className = 'carousel-bullet';
+      button.type = 'button';
+      button.setAttribute('aria-label', `Bild ${slideIndex + 1} anzeigen`);
+      button.dataset.slide = String(slideIndex);
+      return button;
+    });
+
+    const bulletNav = document.createElement('div');
+    bulletNav.className = 'carousel-bullets';
+    bulletNav.setAttribute('aria-label', 'Slider Navigation');
+    bulletNav.append(...bullets);
+    root.appendChild(bulletNav);
 
     const show = (nextIndex) => {
-      slides[index].classList.remove('is-active');
       index = (nextIndex + slides.length) % slides.length;
-      slides[index].classList.add('is-active');
+      slides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === index;
+        slide.classList.toggle('is-active', isActive);
+        slide.setAttribute('aria-hidden', String(!isActive));
+      });
+      bullets.forEach((bullet, bulletIndex) => {
+        const isActive = bulletIndex === index;
+        bullet.classList.toggle('is-active', isActive);
+        bullet.setAttribute('aria-current', isActive ? 'true' : 'false');
+      });
     };
 
-    root.querySelector('[data-prev]')?.addEventListener('click', () => show(index - 1));
-    root.querySelector('[data-next]')?.addEventListener('click', () => show(index + 1));
+    const restartAutoplay = () => {
+      if (root.dataset.autoplay === 'false') return;
+      if (root._carouselTimer) window.clearInterval(root._carouselTimer);
+      root._carouselTimer = window.setInterval(() => show(index + 1), 6500);
+    };
+
+    const goTo = (nextIndex) => {
+      show(nextIndex);
+      restartAutoplay();
+    };
+
+    const prevButton = root.querySelector('[data-prev]');
+    const nextButton = root.querySelector('[data-next]');
+    if (prevButton) prevButton.onclick = () => goTo(index - 1);
+    if (nextButton) nextButton.onclick = () => goTo(index + 1);
+    bullets.forEach((bullet, bulletIndex) => {
+      bullet.addEventListener('click', () => goTo(bulletIndex));
+    });
+
+    show(index);
 
     if (root.dataset.autoplay !== 'false') {
       root._carouselTimer = window.setInterval(() => show(index + 1), 6500);
@@ -37,6 +79,27 @@
 
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const navAnchors = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+  const navSections = navAnchors
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+  const updateActiveNav = () => {
+    const scrollPosition = window.scrollY + 140;
+    let activeSection = navSections[0];
+    navSections.forEach((section) => {
+      if (section.offsetTop <= scrollPosition) activeSection = section;
+    });
+    navAnchors.forEach((link) => {
+      const isActive = link.getAttribute('href') === `#${activeSection?.id}`;
+      link.classList.toggle('is-active', isActive);
+      if (isActive) link.setAttribute('aria-current', 'page');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  updateActiveNav();
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  window.addEventListener('resize', updateActiveNav);
+
   navToggle?.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('is-open');
     header?.classList.toggle('is-menu-open', isOpen);
@@ -136,23 +199,132 @@
     });
   });
 
-  const rangeField = document.getElementById('booking-range');
-  const arrival = document.getElementById('arrival');
-  const departure = document.getElementById('departure');
-  const updateBookingRange = () => {
-    if (!rangeField) return;
-    const parts = [];
-    if (arrival?.value) parts.push(`Anreise ${arrival.value}`);
-    if (departure?.value) parts.push(`Abreise ${departure.value}`);
-    rangeField.value = parts.join(' - ');
-  };
-  arrival?.addEventListener('change', updateBookingRange);
-  departure?.addEventListener('change', updateBookingRange);
+  const datepicker = document.getElementById('datepicker');
+  if (datepicker) {
+    const monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+    const weekdayNames = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    let visibleMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+    let startDate = null;
+    let endDate = null;
+
+    const picker = document.createElement('div');
+    picker.className = 'range-picker';
+    picker.hidden = true;
+    datepicker.closest('.date-range-field').appendChild(picker);
+
+    const normalize = (date) => new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    const sameDay = (a, b) => a && b && a.getTime() === b.getTime();
+    const toIso = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    const fromIso = (value) => {
+      const [year, month, day] = value.split('-').map(Number);
+      return new Date(year, month - 1, day);
+    };
+    const formatDate = (date) => `${date.getDate()}. ${monthNames[date.getMonth()]} ${date.getFullYear()}`;
+    const updateField = () => {
+      datepicker.value = startDate && endDate ? `${formatDate(startDate)} bis ${formatDate(endDate)}` : '';
+    };
+
+    const renderPicker = () => {
+      const year = visibleMonth.getFullYear();
+      const month = visibleMonth.getMonth();
+      const firstDay = new Date(year, month, 1);
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const blanks = (firstDay.getDay() + 6) % 7;
+
+      const days = [];
+      for (let i = 0; i < blanks; i += 1) days.push('<span></span>');
+      for (let day = 1; day <= daysInMonth; day += 1) {
+        const date = new Date(year, month, day);
+        const inRange = startDate && endDate && date > startDate && date < endDate;
+        const classes = [
+          'range-picker-day',
+          sameDay(date, today) ? 'is-today' : '',
+          sameDay(date, startDate) || sameDay(date, endDate) ? 'is-selected' : '',
+          inRange ? 'is-in-range' : ''
+        ].filter(Boolean).join(' ');
+        days.push(`<button class="${classes}" type="button" data-date="${toIso(date)}">${day}</button>`);
+      }
+
+      picker.innerHTML = `
+        <div class="range-picker-header">
+          <button class="range-picker-nav" type="button" data-month="-1" aria-label="Vorheriger Monat">&lsaquo;</button>
+          <div class="range-picker-title">${monthNames[month]} ${year}</div>
+          <button class="range-picker-nav" type="button" data-month="1" aria-label="Nächster Monat">&rsaquo;</button>
+        </div>
+        <div class="range-picker-grid">
+          ${weekdayNames.map((day) => `<span class="range-picker-weekday">${day}</span>`).join('')}
+          ${days.join('')}
+        </div>
+        <div class="range-picker-actions">
+          <button class="range-picker-clear" type="button" data-clear>Auswahl löschen</button>
+        </div>
+      `;
+    };
+
+    const openPicker = () => {
+      picker.hidden = false;
+      renderPicker();
+    };
+
+    datepicker.addEventListener('focus', openPicker);
+    datepicker.addEventListener('click', openPicker);
+
+    picker.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const monthButton = event.target.closest('[data-month]');
+      if (monthButton) {
+        visibleMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + Number(monthButton.dataset.month), 1);
+        renderPicker();
+        return;
+      }
+
+      if (event.target.closest('[data-clear]')) {
+        startDate = null;
+        endDate = null;
+        updateField();
+        renderPicker();
+        return;
+      }
+
+      const dayButton = event.target.closest('[data-date]');
+      if (!dayButton) return;
+      const selected = normalize(fromIso(dayButton.dataset.date));
+      if (!startDate || endDate) {
+        startDate = selected;
+        endDate = null;
+      } else if (selected < startDate) {
+        endDate = startDate;
+        startDate = selected;
+      } else {
+        endDate = selected;
+      }
+      updateField();
+      renderPicker();
+      if (startDate && endDate) picker.hidden = true;
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!picker.contains(event.target) && event.target !== datepicker) picker.hidden = true;
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') picker.hidden = true;
+    });
+
+    datepicker.form?.addEventListener('reset', () => {
+      startDate = null;
+      endDate = null;
+      picker.hidden = true;
+      renderPicker();
+    });
+  }
 
   const form = document.querySelector('.booking-form');
   form?.addEventListener('submit', async (event) => {
     event.preventDefault();
-    updateBookingRange();
 
     const data = new FormData(form);
     try {

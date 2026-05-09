@@ -33,6 +33,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Icomoon Mainau";
+  src: url("../fonts/icomoon/icomoon1ff5.woff") format("woff"),
+    url("../fonts/icomoon/icomoon1ff5.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -127,18 +136,23 @@ button {
 .brand {
   display: block;
   width: 150px;
-  height: 48px;
+  height: 40px;
   color: var(--ink);
+  background: url("../img/logo.png") left top / 150px 80px no-repeat;
   text-decoration: none;
   transition: transform 220ms ease;
 }
 
 .brand img {
+  display: block;
   width: 150px;
-  height: auto;
-  max-height: 48px;
-  object-fit: contain;
-  object-position: left center;
+  height: 40px;
+  opacity: 0;
+}
+
+.site-header.is-scrolled .brand,
+.site-header.is-menu-open .brand {
+  background-position: left bottom;
 }
 
 .brand span {
@@ -152,7 +166,7 @@ button {
 
 .nav-links {
   display: flex;
-  gap: 22px;
+  gap: 24px;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -161,8 +175,8 @@ button {
 
 .nav-links a {
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 180ms ease;
@@ -175,6 +189,11 @@ button {
 
 .nav-links a:hover,
 .nav-links a.is-active {
+  color: var(--accent);
+}
+
+.site-header.is-scrolled .nav-links a.is-active,
+.site-header.is-menu-open .nav-links a.is-active {
   color: var(--accent);
 }
 
@@ -200,7 +219,7 @@ button {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 0;
   background: #111;
 }
 
@@ -213,20 +232,28 @@ button {
 
 .hero-slider {
   min-height: 750px;
+  min-height: max(750px, 100vh);
 }
 
 .slide {
-  display: none;
-  position: relative;
+  position: absolute;
+  inset: 0;
   margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 900ms ease, visibility 900ms ease;
 }
 
 .slide.is-active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .hero .slide {
   min-height: 750px;
+  min-height: max(750px, 100vh);
 }
 
 .slide img {
@@ -254,6 +281,7 @@ button {
   display: grid;
   place-content: center;
   min-height: 750px;
+  min-height: max(750px, 100vh);
   padding: 90px 24px 48px;
   color: #fff;
   text-align: center;
@@ -319,10 +347,18 @@ h1,
 }
 
 .intro {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.intro .eyebrow,
+.intro h2,
+.intro .lead {
   text-align: center;
 }
 
 .intro h2,
+.split-section h2,
 .banner h2,
 .contact h2 {
   margin: 0 0 12px;
@@ -332,6 +368,10 @@ h1,
   text-transform: uppercase;
   letter-spacing: .04em;
   color: #000;
+}
+
+.banner h2 {
+  color: #fff;
 }
 
 .lead {
@@ -348,7 +388,19 @@ h1,
 
 .two-col {
   grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
-  align-items: center;
+  align-items: start;
+}
+
+.split-section {
+  padding-top: 2em;
+}
+
+.split-section .eyebrow {
+  margin-top: 0;
+}
+
+.split-section h2 {
+  margin-bottom: 20px;
 }
 
 .clean-list {
@@ -372,15 +424,16 @@ h1,
 
 .gallery-panel figcaption {
   position: absolute;
+  z-index: 2;
   inset: auto 0 0;
-  padding: 18px;
+  padding: 18px 18px 44px;
   color: #fff;
   background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.74));
 }
 
 .carousel-btn {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   top: 50%;
   width: 44px;
   height: 54px;
@@ -402,6 +455,43 @@ h1,
   right: 0;
 }
 
+.carousel-bullets {
+  position: absolute;
+  z-index: 6;
+  right: 16px;
+  bottom: 14px;
+  left: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  pointer-events: none;
+}
+
+.carousel-bullet {
+  width: 11px;
+  height: 11px;
+  min-height: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.86);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.carousel-bullet:hover,
+.carousel-bullet:focus {
+  background: rgba(255, 255, 255, 0.72);
+  transform: scale(1.16);
+}
+
+.carousel-bullet.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 .banner {
   position: relative;
   min-height: 600px;
@@ -409,13 +499,54 @@ h1,
   place-items: center;
   color: #fff;
   text-align: center;
-  background-image: var(--banner-image);
   background-position: center var(--parallax-y, 50%);
   background-size: cover;
+  background-repeat: no-repeat;
   will-change: background-position;
 }
 
+.banner-auswahl {
+  background-image: url("../img/flusspanorama.webp");
+}
+
+.banner-buchung {
+  background-image: url("../img/faehre.webp");
+}
+
+.banner-galerie {
+  background-image: url("../img/volkach-rathausplatz.webp");
+}
+
 .banner .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+#preise {
+  position: relative;
+  z-index: 2;
+  margin-top: -15%;
+  background: transparent;
+}
+
+.gallery-overlap {
+  --gallery-bg-start: clamp(110px, 15vw, 220px);
+  position: relative;
+  z-index: 2;
+  margin-top: -15%;
+  background: transparent;
+  isolation: isolate;
+}
+
+.gallery-overlap::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: var(--gallery-bg-start) 0 0;
+  background: var(--soft);
+}
+
+.gallery-overlap > .wrap {
   position: relative;
   z-index: 1;
 }
@@ -440,22 +571,25 @@ h1,
   display: block;
 }
 
-.apartment h2 {
+.apartment-heading {
   margin: 0 0 18px;
-  font-family: "Open Sans Mainau", Arial, sans-serif;
-  font-size: clamp(1.8em, 3.2vw, 2.8em);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  color: #000;
+  text-align: center;
 }
 
-.apartment .eyebrow {
+.apartment-heading h2 {
+  margin: 0;
   color: #747474;
   font-family: "Open Sans Mainau", Arial, sans-serif;
   font-size: clamp(1.2em, 1.4vw, 1.8em);
   font-weight: 600;
   line-height: 1.2;
+  text-transform: none;
+}
+
+.apartment-heading p {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-weight: 700;
 }
 
 .apartment-copy {
@@ -475,8 +609,13 @@ details {
 
 summary {
   padding: 16px 18px;
+  background: #f4f4f4;
   font-weight: 700;
   cursor: pointer;
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--line);
 }
 
 details > :not(summary) {
@@ -536,8 +675,8 @@ details > :last-child {
 .zoom-btn {
   position: absolute;
   right: 14px;
-  bottom: 14px;
-  z-index: 3;
+  bottom: 50px;
+  z-index: 7;
   padding: 9px 12px;
   border-radius: 999px;
   box-shadow: var(--shadow);
@@ -549,6 +688,12 @@ details > :last-child {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
+}
+
+.booking-form label,
+.date-range-field > label {
+  color: var(--muted);
+  font-weight: 400;
 }
 
 .form-grid {
@@ -563,7 +708,17 @@ label {
   font-weight: 700;
 }
 
-label span {
+label small {
+  color: var(--muted);
+  font-size: 85%;
+  font-weight: 400;
+}
+
+.label-caption {
+  color: inherit;
+}
+
+.required-mark {
   color: var(--accent);
 }
 
@@ -572,15 +727,185 @@ select,
 textarea {
   width: 100%;
   min-height: 46px;
-  padding: 11px 12px;
-  color: var(--ink);
+  padding: 11px 50px 11px 12px;
+  color: #555;
   border: 1px solid var(--line);
   border-radius: 6px;
   background: #fff;
+  box-shadow: none;
+  font-size: 14px;
+  appearance: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+  outline: none;
 }
 
 textarea {
   resize: vertical;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+}
+
+.form-field .icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  color: var(--muted);
+  font-family: "Icomoon Mainau";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.form-field-textarea .icon {
+  top: 23px;
+  transform: none;
+}
+
+.icon-home22::before {
+  content: "\ea82";
+}
+
+.icon-calendar::before {
+  content: "\e979";
+}
+
+.icon-add-user::before {
+  content: "\e957";
+}
+
+.icon-user2::before {
+  content: "\eaf2";
+}
+
+.icon-mail::before {
+  content: "\e9da";
+}
+
+.icon-phone::before {
+  content: "\e9f4";
+}
+
+.icon-address::before {
+  content: "\e958";
+}
+
+.icon-location2::before {
+  content: "\eac8";
+}
+
+.icon-edit::before {
+  content: "\e999";
+}
+
+.date-range-field {
+  display: grid;
+  gap: 7px;
+  position: relative;
+}
+
+#datepicker {
+  cursor: pointer;
+}
+
+.range-picker {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 30;
+  width: min(360px, calc(100vw - 36px));
+  padding: 14px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
+}
+
+.range-picker[hidden] {
+  display: none;
+}
+
+.range-picker-header,
+.range-picker-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.range-picker-title {
+  font-weight: 800;
+  text-align: center;
+}
+
+.range-picker-nav,
+.range-picker-clear {
+  min-height: 0;
+  padding: 6px 9px;
+  color: var(--ink);
+  background: #f4f0e8;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.range-picker-clear {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.range-picker-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.range-picker-weekday {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.range-picker-day {
+  min-height: 38px;
+  padding: 0;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 999px;
+}
+
+.range-picker-day:hover,
+.range-picker-day:focus {
+  border-color: var(--accent);
+}
+
+.range-picker-day.is-today {
+  border-color: rgba(113, 60, 32, 0.35);
+}
+
+.range-picker-day.is-in-range {
+  background: #f2e5d8;
+}
+
+.range-picker-day.is-selected {
+  color: #fff;
+  background: var(--accent);
 }
 
 .wide {
@@ -603,7 +928,12 @@ textarea {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: start;
+  color: var(--muted);
   font-weight: 400;
+}
+
+.consent span {
+  color: inherit;
 }
 
 .consent input {
@@ -630,46 +960,67 @@ textarea {
 
 .gallery-cards article {
   background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 8px;
   overflow: hidden;
 }
 
 .gallery-cards button {
-  position: relative;
   width: 100%;
   padding: 0;
-  color: #fff;
   border: 0;
-  background: #111;
+  background: transparent;
   text-align: left;
 }
 
 .gallery-cards img {
+  display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  opacity: 0.82;
+  height: auto;
+  max-width: 100%;
   transition: opacity 180ms ease;
 }
 
 .gallery-cards button:hover img {
-  opacity: 1;
+  opacity: 0.86;
 }
 
-.gallery-cards span {
-  position: absolute;
-  left: 18px;
-  bottom: 18px;
+.gallery-card-text {
+  padding: 20px;
+}
+
+.gallery-card-text h3 {
+  margin: 0 0 10px;
+  color: #000;
   font-family: "Open Sans Mainau", Arial, sans-serif;
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-.gallery-cards p {
-  padding: 0 18px 18px;
+.gallery-card-text p {
+  margin-bottom: 18px;
+}
+
+.gallery-card-text p:last-child {
+  margin-bottom: 0;
+}
+
+.gallery-cards .gallery-text-link {
+  display: inline-block;
+  width: auto;
+  padding-bottom: 5px;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border-bottom: 2px solid var(--accent);
+}
+
+.gallery-cards .gallery-text-link:hover {
+  color: var(--accent);
 }
 
 .contact {
+  padding-top: 2em;
   text-align: center;
 }
 
@@ -908,8 +1259,33 @@ textarea {
     padding: 64px 0;
   }
 
+  #preise {
+    margin-top: -52px;
+  }
+
+  .gallery-overlap {
+    --gallery-bg-start: 52px;
+    margin-top: -52px;
+  }
+
+  .intro {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .split-section {
+    padding-top: 3em;
+  }
+
   .banner {
     min-height: 300px;
+  }
+
+  .hero-slider,
+  .hero .slide,
+  .hero figcaption {
+    min-height: 420px;
+    min-height: max(420px, 70vh);
   }
 
   .gallery-panel,
