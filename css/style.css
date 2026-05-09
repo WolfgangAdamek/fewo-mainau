@@ -1,0 +1,61 @@
+/* RESET */
+.demonstrations {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.demonstrations a {
+  float: left;
+  width: 150px;
+  height: 80px;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+}
+.demonstrations a img {
+  float: left;
+  width: 150px;
+  height: 80px;
+}
+
+.demonstrations a:last-child {
+  margin-right: 0;
+}
+
+.demos {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.thumbnails {
+  float: left;
+  position: relative;
+  margin: 0 20px 20px 0;
+  padding: 0;
+}
+.thumbnails img {
+  float: left;
+  max-width: 160px;
+}
+.thumbnails-landscape img {
+  max-height: 180px;
+  max-width: 100%;
+}
+
+.thumbnails:last-child {
+  margin-right: 0 !important;
+}
+
+#logo {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#logo img {
+  float: left;
+  width: 189px;
+  height: 203px;
+}

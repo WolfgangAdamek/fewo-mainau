@@ -1,0 +1,95 @@
+/* ----------------------------------
+Minimal Theme for prettyPhoto lightbox
+http://tutorialspage.com/pretty-photo-minimal-theme-a-pure-css-prettyphoto-simple-theme
+----------------------------------- */
+div.minimal { overflow: hidden; }
+div.minimal .pp_gallery li.default a, div.minimal .pp_next, div.minimal a.pp_previous {	background: none; } /* Cancel bg load */
+div.minimal .pp_top, div.minimal .pp_top .pp_middle, div.minimal .pp_top .pp_left, div.minimal .pp_top .pp_right, div.minimal .pp_bottom, div.minimal .pp_bottom .pp_left, div.minimal .pp_bottom .pp_middle, div.minimal .pp_bottom .pp_right { height: 13px; display: none; }
+div.minimal .pp_content_container .pp_left {  padding-left: 13px; }
+div.minimal .pp_content_container .pp_right {   padding-right: 13px; }
+div.minimal .pp_content { background-color: #fff; margin-bottom: -36px; } 
+
+/* -----------------------------------
+ Next/Previous buttons settings
+-------------------------------------- */
+div.minimal .pp_next:hover::after, div.minimal .pp_next:hover::before, 
+div.minimal .pp_previous:hover::before, div.minimal .pp_previous:hover::after { content: " "; background: #000; width: 5px; height: 15px; display: block; position: absolute; top: 45%; }
+div.minimal .pp_next:hover::after, div.minimal .pp_next:hover::before { right: 15px; }
+div.minimal .pp_previous:hover::before, div.minimal .pp_previous:hover::after { left: 15px; }
+div.minimal .pp_next:hover::after,div.minimal .pp_previous:hover::after {  margin-top: 8px; }
+
+/* -----------------------------------
+ Next/Previous Gallery navigation buttons settingd
+-------------------------------------- */
+div.minimal a.pp_arrow_next, div.minimal a.pp_arrow_previous { height: 20px; width: 20px; background-color: #000;opacity: 0.8; } 
+div.minimal a.pp_arrow_next::after, div.minimal a.pp_arrow_next::before, div.minimal a.pp_arrow_previous::before, div.minimal a.pp_arrow_previous::after { content: " "; background: #fff; width: 2px; height: 6px; display: block; position: absolute; top: 12px; }
+div.minimal a.pp_arrow_next::after, div.minimal a.pp_arrow_next::before { right: 8px; }
+div.minimal a.pp_arrow_previous::before, div.minimal a.pp_arrow_previous::after { left: 8px; }
+div.minimal a.pp_arrow_next::after,div.minimal a.pp_arrow_previous::after {  margin-top: 3px; }
+div.minimal #pp_full_res .pp_inline { color: #000; } 
+div.minimal .pp_gallery ul li a { border:1px solid #aaa; }
+div.minimal .pp_gallery ul li a:hover,
+div.minimal .pp_gallery ul li.selected a { border-color: #fff; }
+
+/* rotate butons */
+div.minimal .pp_next:hover::after, div.minimal .pp_previous:hover::before, div.minimal a.pp_arrow_next::after, div.minimal a.pp_arrow_previous::before { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+div.minimal .pp_next:hover::before, div.minimal .pp_previous:hover::after, div.minimal a.pp_arrow_next::before, div.minimal a.pp_arrow_previous::after { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+/* round some butons */
+div.minimal a.pp_arrow_next, div.minimal a.pp_arrow_previous, div.minimal a.pp_close {-webkit-border-radius: 50%;	-moz-border-radius: 50%; border-radius: 50%; }
+
+/* -----------------------------------
+ Close button
+-------------------------------------- */	
+div.minimal a.pp_close { width: 20px; height: 20px; cursor: pointer; text-decoration: none; font: bold 12px/18px Calibri; background: #333; margin: 5px; z-index: 20000; }
+div.minimal a.pp_close::after { content: 'x'; position: absolute; right: -9987px; color: #fff; }
+
+/* -----------------------------------
+ Expand/Contract buttons
+-------------------------------------- */
+div.minimal a.pp_expand, div.minimal a.pp_contract { right: 60px; height: 15px; }
+div.minimal a.pp_expand::after, div.minimal a.pp_contract::after,
+div.minimal a.pp_expand::before, div.minimal a.pp_contract::before { content: ""; position: absolute; top: 50%; border-style: solid; border-color: #333; }
+div.minimal a.pp_expand::before,div.minimal a.pp_contract::before { left:0; width:6px; height:0; border-color: transparent #333; margin-top: -6px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg);	transform: rotate(-45deg); }
+div.minimal a.pp_expand::after,div.minimal a.pp_contract::after { left: 5px; width: 8px; height: 8px; margin-top: -8px; }
+div.minimal a.pp_expand::before  { border-width: 7px 7px 0; }
+div.minimal a.pp_contract::before{ border-width: 0 7px 7px; }
+div.minimal a.pp_expand::after   { border-width: 3px 0 0 3px; }
+div.minimal a.pp_contract::after { border-width: 0 3px 3px 0; }
+
+/* -----------------------------------
+ Loader icon
+-------------------------------------- */
+div.minimal .pp_loaderIcon { width: 40px; height: 40px; background-color: #333; border-radius: 100% !important; -webkit-animation: sk-scaleout 1.0s infinite ease-in-out; animation: sk-scaleout 1.0s infinite ease-in-out;	} @-webkit-keyframes sk-scaleout { 0% { -webkit-transform: scale(0) } 100% {-webkit-transform: scale(1.0); opacity: 0; } } @keyframes sk-scaleout { 0% { -webkit-transform: scale(0); transform: scale(0); } 100% {-webkit-transform: scale(1.0); transform: scale(1.0);  opacity: 0; }	} 
+
+/* ----------------------------------
+Minimal Theme uses CSS to hide social buttons. You can use JS settings to deactivatie it
+----------------------------------- */
+div.minimal .pp_nav, div.minimal .pp_description, div.minimal .pp_social {display: none !important;}
+
+/* ----------------------------------
+Reposition some elements
+----------------------------------- */
+div.minimal .pp_details { position: absolute; top: 0; margin:0;	}
+
+/* ----------------------------------
+Set opacity for some elements
+----------------------------------- */
+div.minimal .pp_arrow_next:hover, div.minimal .pp_arrow_previous:hover, div.minimal a.pp_expand:hover, div.minimal a.pp_contract:hover, div.minimal .pp_next:hover, div.minimal .pp_previous:hover, div.minimal a.pp_close:hover { opacity: 0.8;}
+	
+/* ------------------------------------------------------------------------
+ prettyPhoto styling for small screens
+------------------------------------------------------------------------- */
+@media screen and (max-width: 648px) {
+ 	div.pp_pic_holder.minimal { width: 100%!important; left: 0!important; overflow: hidden; }
+ 	div.minimal .pp_content, div.minimal .pp_fade,div.minimal .pp_hoverContainer { height: 100%!important; width: 100% !important; }
+	div.minimal .pp_content_container .pp_left { padding-left: 0!important; }
+	div.minimal .pp_content_container .pp_right { padding-right: 0!important; }
+	div.minimal .pp_expand, div.minimal .pp_contract,  div.minimal .pp_gallery, div.minimal.pp_top, div.minimal .pp_bottom, div.minimal .ppt { display: none!important; }
+	div.minimal #pp_full_res img { width: 100%!important; height: auto!important; max-height: 100%; }
+	div.minimal .pp_details { width: 94%!important; padding-left: 3%; padding-right: 4%; padding-top: 10px; padding-bottom: 10px; margin-top: -2px!important; }
+	div.minimal a.pp_close { right: 10px!important; top: 10px!important; }
+}
+
+
+ 

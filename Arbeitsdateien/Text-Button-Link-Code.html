@@ -1,0 +1,131 @@
+   <!-- Textlink -->
+	
+<a href="#" onclick="toggleExampleText()">Show Example Text</a>
+<div class="zettel" id="example-text" style="display: none;">
+  <div>
+    <span onclick="toggleExampleText()" style="float: right; cursor: pointer;">&times;</span>
+    text text text
+  </div>
+</div>
+
+   <!-- Button-Link -->
+<button onclick="toggleExampleText()">Show Example Text</button>
+<div class="zettel" id="example-text" style="display: none;">
+  <div>
+    <span onclick="toggleExampleText()" style="float: right; cursor: pointer;">&times;</span>
+    text text text
+  </div>
+</div>
+
+   <!-- das dazugehörige JS -->
+   
+   <script>
+  function toggleExampleText() {
+    var exampleText = document.getElementById('example-text');
+    if (exampleText.style.display === 'none') {
+      exampleText.style.display = 'block';
+    } else {
+      exampleText.style.display = 'none';
+    }
+  }
+</script>
+
+
+<a href="javascript:void(0);" onclick="toggleExampleText()">Show Example Text</a>
+<div class="zettel" id="example-text" style="display: none; position: relative;">
+  <div>
+    <span onclick="toggleExampleText()" style="position: absolute; top: 5px; right: 5px; cursor: pointer;">&times;</span>
+    text text text
+    <a id="example-anchor"></a>
+  </div>
+</div>
+
+
+<script>
+  function toggleExampleText() {
+    var exampleText = document.getElementById('example-text');
+    if (exampleText.style.display === 'none') {
+      exampleText.style.display = 'block';
+      // Scroll to the example anchor
+      var exampleAnchor = document.getElementById('example-anchor');
+      if (exampleAnchor) {
+        exampleAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      exampleText.style.display = 'none';
+    }
+  }
+</script>
+
+
+<a href="https://www.example.com" onclick="toggleExampleText()">Open Another URL</a>
+
+<!-- Example text container -->
+<div class="zettel" id="example-text">
+  <div>
+    <span onclick="toggleExampleText()" style="position: absolute; top: 5px; right: 5px; cursor: pointer;">&times;</span>
+    text text text
+  </div>
+</div>
+
+
+<script>
+  // Function to toggle example text visibility
+  function toggleExampleText(event) {
+    // Prevent the default behavior of the link (opening a new URL)
+    event.preventDefault();
+
+    var exampleText = document.getElementById('example-text');
+    exampleText.style.display = exampleText.style.display === 'none' ? 'block' : 'none';
+
+    // Redirect to another URL only if the specific link is clicked
+    if (event.target.getAttribute('href') === 'https://www.example.com') {
+      window.location.href = event.target.getAttribute('href');
+    }
+  }
+</script>
+
+
+
+<script>
+  // Function to toggle data text visibility
+  function toggleDataText() {
+    var dataText = document.getElementById('data-text');
+    dataText.style.display = dataText.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Function to load data text
+  function loadDataText() {
+    // Fetch the text file
+    fetch('datatext.txt')
+      .then(response => response.text())
+      .then(text => {
+        // Inject the fetched text into the page
+        document.getElementById('data-container').textContent = text;
+      })
+      .catch(error => console.error('Error loading data text:', error));
+  }
+
+  // Close data text when clicking anywhere outside of it
+  document.addEventListener('click', function(event) {
+    var dataText = document.getElementById('data-text');
+    var targetElement = event.target; // Element that triggered the event
+
+    // Check if the click occurred outside of the data text container
+    if (!dataText.contains(targetElement) && targetElement.getAttribute('onclick') !== 'toggleDataText()') {
+      dataText.style.display = 'none';
+    }
+  });
+</script>
+
+<!-- Link to toggle and load data text -->
+<a href="#" onclick="toggleAndLoadDataText()">Toggle and Load Data Text</a>
+
+<!-- Data text container -->
+<div class="zettel" id="data-text" style="display: none;">
+  <div>
+    <span onclick="toggleDataText()" style="position: absolute; top: 5px; right: 5px; cursor: pointer;">&times;</span>
+    <!-- Container to display the loaded text -->
+    <div id="data-container"></div>
+  </div>
+</div>

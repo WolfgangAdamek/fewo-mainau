@@ -1,0 +1,838 @@
+05.12.2024 01:23:10 streettattoo.eu [client 207.154.69.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] submit headerArray
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] (
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_HOST] => fewo-mainau.de
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [REMOTE_ADDR] => 93.127.170.30
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [TZ] => MET
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_MAX_REQUESTS] => 200
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_CHILDREN] => 12
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_CACHE] => 1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_FLUSH] => 1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_FCGI_IDLE] => 6
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SCRIPT_NAME] => /formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [REQUEST_URI] => /formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [QUERY_STRING] => 
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SERVER_PROTOCOL] => HTTP/1.1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [GATEWAY_INTERFACE] => CGI/1.1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [REMOTE_PORT] => 6811
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SERVER_ADMIN] => service@webmailer.de
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SERVER_PORT] => 443
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SERVER_NAME] => fewo-mainau.de
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [CONTENT_LENGTH] => 1013
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_SEC_CH_UA_PLATFORM] => "Linux"
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_SEC_GPC] => 1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_SEC_CH_UA_MOBILE] => ?0
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_SEC_CH_UA] => "Not A(Brand";v="99", "Google Chrome";v="114", "Chromium";v="114"
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [CONTENT_TYPE] => application/x-www-form-urlencoded
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_REFERER] => https://fewo-mainau.de/index.html
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_ORIGIN] => https://fewo-mainau.de
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_DNT] => 1
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.5
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [RZ_php] => 81
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [HTTPS] => on
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [SCRIPT_URL] => /formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [RZ_path] => web101/c2/18/5116218
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [RZ_n] => 5116218
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [UNIQUE_ID] => Z1DzSwHKXQ0b4sfxQJKwnAAABzQ
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [FCGI_ROLE] => RESPONDER
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PHP_SELF] => /formmail.php
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [REQUEST_TIME_FLOAT] => 1733358411.8497
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [REQUEST_TIME] => 1733358411
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [argv] => Array
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] (
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] )
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [argc] => 0
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] )
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] submit requestArray
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] (
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Wohnung:] => Fewo Nr5
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Buchungszeitraum:] => 
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Personenzahl:] => 1 Pers.
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Name:] => Tiffany Mulquin
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Email:] => tiffany.mulquin76@gmail.com
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Telefon:] => 30208377
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Mobile:] => 
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Strasse:] => Leopoldstra?E 30
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [PLZ/Wohnort:] => 10623
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Nachricht:] => Don\xe2\x80\x99t Let High Upfront Costs Cost You Clients
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] Every time a client hesitates because of upfront costs, you\xe2\x80\x99re losing potential revenue. Without offering flexible financing, you risk watching your competitors gain the business you deserve. With Client Financing and Credee, you can turn hesitant prospects into committed clients and avoid losing out on valuable opportunities.
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] Take action now before you lose more business!
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] \xe2\x9c\x85 Key Features:
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] Flexible plans for clients
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] Increased conversions
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] Stress-free financing management
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] \xed\xa0\xbd\xed\xb3\x8c Explore now:
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] http://j4bcvk.credeefastapproval.top
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] http://lwzqzu.clientfinancing-quickapproval.top
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [Zustimmung_Datenschutz:] => ja
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] [submit] => Senden
+05.12.2024 01:26:51 fewo-mainau.de [client 93.127.42.0] )
+05.12.2024 08:42:35 streettattoo.eu [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/streettattoo
+05.12.2024 08:42:35 streettattoo.eu [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/install
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1For-vHcCLxj3i7-gg6TwAAApk
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_ACCEPT] => */*
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_ACCEPT_ENCODING] => deflate, gzip, br
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 54.36.148.184
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 65467
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => 
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733388463.1868
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733388463
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 0
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 09:47:43 fewo-mainau.de [client 54.36.20.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] submit headerArray
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] (
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_HOST] => fewo-mainau.de
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [REMOTE_ADDR] => 2003:cb:3f40:9a:a8cd:778d:248b:1854
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [TZ] => MET
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_MAX_REQUESTS] => 200
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_CHILDREN] => 12
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_STARTUP_REQUESTS] => 2
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_CACHE] => 1
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_FLUSH] => 1
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_IDLE] => 6
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_NAME] => /formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_URI] => /formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [QUERY_STRING] => 
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_PROTOCOL] => HTTP/1.1
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [GATEWAY_INTERFACE] => CGI/1.1
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [REMOTE_PORT] => 12983
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_ADMIN] => service@webmailer.de
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_PORT] => 443
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_NAME] => fewo-mainau.de
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [CONTENT_LENGTH] => 247
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_PRIORITY] => u=0
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_SITE] => same-origin
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_MODE] => cors
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_DEST] => empty
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_REFERER] => https://fewo-mainau.de/
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_DNT] => 1
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ORIGIN] => https://fewo-mainau.de
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=UTF-8
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT_LANGUAGE] => de,en-US;q=0.7,en;q=0.3
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT] => */*
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [RZ_php] => 81
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [HTTPS] => on
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_URL] => /formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [RZ_path] => web101/c2/18/5116218
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [RZ_n] => 5116218
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [UNIQUE_ID] => Z1GK3S1aTJnT1YMnXsH4bgAABDg
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [FCGI_ROLE] => RESPONDER
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PHP_SELF] => /formmail.php
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_TIME_FLOAT] => 1733397213.9141
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_TIME] => 1733397213
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [argv] => Array
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] (
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] )
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [argc] => 0
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] )
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] submit requestArray
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] (
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Wohnung:] => Apartment Nr13
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Buchungszeitraum:] => 06/12/2024 - 11/12/2024
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Personenzahl:] => 1 Pers.
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Name:] => Oma
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Email:] => zusa@fertig.com
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Telefon:] => 
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Mobile:] => 
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Strasse:] => 
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [PLZ/Wohnort:] => 
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Nachricht:] => jjaa zusage
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] [Zustimmung_Datenschutz:] => ja
+05.12.2024 12:13:33 fewo-mainau.de [client 2003:cb:3f00::] )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1GlDinCUZdQyUIbTyY3BwAAA60
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => http://www.google.com/url?url=fewo-mainau.de&yahoo.com
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.76.22
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 46305
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733403918.2846
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733403918
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1GlDtrR2bmnrgkglH4K9gAAB0k
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => https://fewo-mainau.de/formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.76.22
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 16512
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733403918.7826
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733403918
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+05.12.2024 14:05:18 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+05.12.2024 16:44:03 streettattoo.eu [client 4.227.36.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/xmlrpc.php: script not found or unable to stat
+05.12.2024 16:51:11 streettattoo.eu [client 196.117.3.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-aa.php: script not found or unable to stat
+05.12.2024 18:00:50 adamek.de [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/adamek
+05.12.2024 18:00:50 adamek.de [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/install
+05.12.2024 20:51:50 streettattoo.eu [client 45.148.10.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-aa.php: script not found or unable to stat
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] submit headerArray
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] (
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTP_HOST] => fewo-mainau.de
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [REMOTE_ADDR] => 79.142.76.177
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [TZ] => MET
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_MAX_REQUESTS] => 200
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_CHILDREN] => 12
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_CACHE] => 1
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_FLUSH] => 1
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_FCGI_IDLE] => 6
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SCRIPT_NAME] => /formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [REQUEST_URI] => /formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [QUERY_STRING] => 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SERVER_PROTOCOL] => HTTP/1.1
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [GATEWAY_INTERFACE] => CGI/1.1
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [REMOTE_PORT] => 6465
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SERVER_ADMIN] => service@webmailer.de
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SERVER_PORT] => 443
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SERVER_NAME] => fewo-mainau.de
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [CONTENT_LENGTH] => 554
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTP_PRAGMA] => no-cache
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [CONTENT_TYPE] => application/x-www-form-urlencoded
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTP_REFERER] => https://fewo-mainau.de/index.html
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Herring/95.1.8810.11
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTP_ACCEPT] => */*
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [RZ_php] => 81
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [HTTPS] => on
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [SCRIPT_URL] => /formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [RZ_path] => web101/c2/18/5116218
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [RZ_n] => 5116218
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [UNIQUE_ID] => Z1JOBk23NCm4hKotqTHmPgAADE8
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [FCGI_ROLE] => RESPONDER
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PHP_SELF] => /formmail.php
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [REQUEST_TIME_FLOAT] => 1733447174.7641
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [REQUEST_TIME] => 1733447174
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [argv] => Array
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] (
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] )
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [argc] => 0
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] )
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] submit requestArray
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] (
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Wohnung:] => Fewo Nr5
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Buchungszeitraum:] => 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Personenzahl:] => 3 Pers.
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Name:] => Brendan Albanese
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Email:] => renew@energy.sydney
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Telefon:] => 84789597664
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Mobile:] => 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Strasse:] => 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [PLZ/Wohnort:] => 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Nachricht:] => I can't say enough about how delightful your site is! Each element blends seamlessly, making it such a pleasure to explore. Great work! 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] It would be wonderful if you visited my site :: <a href=http://nopm.cc/>Copper scrap yard</a> 
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] Hasta la vista, and may your heart be filled with peace
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [Zustimmung_Datenschutz:] => ja
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] [submit] => Senden
+06.12.2024 02:06:14 fewo-mainau.de [client 79.142.76.0] )
+06.12.2024 04:02:53 fewo-mainau.de [client 185.108.106.0] AH01225: Error reading request entity data
+06.12.2024 04:27:30 fewo-mainau.de [client 185.108.107.0] AH01225: Error reading request entity data
+06.12.2024 07:30:52 fewo-mainau.de [client 185.147.84.0] AH01225: Error reading request entity data
+06.12.2024 07:39:43 adamek.de [client 109.237.99.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/index.php: script not found or unable to stat
+06.12.2024 08:22:30 fewo-mainau.de [client 138.199.59.0] AH01225: Error reading request entity data
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] submit headerArray
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_HOST] => fewo-mainau.de
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [REMOTE_ADDR] => 103.133.67.20
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [TZ] => MET
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_MAX_REQUESTS] => 200
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_CHILDREN] => 12
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_CACHE] => 1
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_FLUSH] => 1
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_IDLE] => 6
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SCRIPT_NAME] => /formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [REQUEST_URI] => /formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [QUERY_STRING] => 
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SERVER_PROTOCOL] => HTTP/1.1
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [GATEWAY_INTERFACE] => CGI/1.1
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [REMOTE_PORT] => 16311
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SERVER_ADMIN] => service@webmailer.de
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SERVER_PORT] => 443
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SERVER_NAME] => fewo-mainau.de
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [CONTENT_LENGTH] => 272
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [CONTENT_TYPE] => application/x-www-form-urlencoded
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_CACHE_CONTROL] => max-age=0
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT] => */*
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [RZ_php] => 81
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [HTTPS] => on
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [SCRIPT_URL] => /formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [RZ_path] => web101/c2/18/5116218
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [RZ_n] => 5116218
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [UNIQUE_ID] => Z1Kz9mvIoLY_IzJwU2O0IgAACp8
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [FCGI_ROLE] => RESPONDER
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PHP_SELF] => /formmail.php
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [REQUEST_TIME_FLOAT] => 1733473270.9525
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [REQUEST_TIME] => 1733473270
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [argv] => Array
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [argc] => 0
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] submit requestArray
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Buchungszeitraum:] => KPOJZcmEo
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Email:] => ravnlyednorowicz@yahoo.com
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Mobile:] => 4697181780
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Name:] => BlMrgzHRzS
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [PLZ/Wohnort:] => knPRZoPLBphaJar
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Personenzahl:] => 3 Pers.
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Strasse:] => YYbqCYRPBJe
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Telefon:] => 8757896786
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Wohnung:] => Fewo Nr5
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [Zustimmung_Datenschutz:] => ja
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] [submit] => Senden
+06.12.2024 09:21:10 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] submit headerArray
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_HOST] => fewo-mainau.de
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [REMOTE_ADDR] => 103.133.67.20
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [TZ] => MET
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_MAX_REQUESTS] => 200
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_CHILDREN] => 12
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_CACHE] => 1
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_FLUSH] => 1
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_FCGI_IDLE] => 6
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SCRIPT_NAME] => /formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [REQUEST_URI] => /formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [QUERY_STRING] => 
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SERVER_PROTOCOL] => HTTP/1.1
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [GATEWAY_INTERFACE] => CGI/1.1
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [REMOTE_PORT] => 22784
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SERVER_ADMIN] => service@webmailer.de
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SERVER_PORT] => 443
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SERVER_NAME] => fewo-mainau.de
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [CONTENT_LENGTH] => 294
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [CONTENT_TYPE] => application/json
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_CACHE_CONTROL] => max-age=0
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_ACCEPT] => */*
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [RZ_php] => 81
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [HTTPS] => on
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [SCRIPT_URL] => /formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [RZ_path] => web101/c2/18/5116218
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [RZ_n] => 5116218
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [UNIQUE_ID] => Z1Kz97fxED6onlCzi_VP5gAAD7M
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [FCGI_ROLE] => RESPONDER
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [PHP_SELF] => /formmail.php
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [REQUEST_TIME_FLOAT] => 1733473271.9803
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [REQUEST_TIME] => 1733473271
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [argv] => Array
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] [argc] => 0
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] submit requestArray
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] (
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] )
+06.12.2024 09:21:11 fewo-mainau.de [client 103.133.67.0] PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+06.12.2024 09:28:37 streettattoo.eu [client 167.99.82.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+06.12.2024 10:06:38 fewo-mainau.de [client 185.220.100.0] AH01225: Error reading request entity data
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] submit headerArray
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] (
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_HOST] => fewo-mainau.de
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [REMOTE_ADDR] => 156.253.168.160
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [TZ] => MET
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_MAX_REQUESTS] => 200
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_CHILDREN] => 12
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_CACHE] => 1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_FLUSH] => 1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_FCGI_IDLE] => 6
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SCRIPT_NAME] => /formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [REQUEST_URI] => /formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [QUERY_STRING] => 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SERVER_PROTOCOL] => HTTP/1.1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [GATEWAY_INTERFACE] => CGI/1.1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [REMOTE_PORT] => 59444
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SERVER_ADMIN] => service@webmailer.de
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SERVER_PORT] => 443
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SERVER_NAME] => fewo-mainau.de
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [CONTENT_LENGTH] => 1054
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_SEC_CH_UA_PLATFORM] => "Linux"
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_SEC_GPC] => 1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_SEC_CH_UA_MOBILE] => ?0
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_SEC_CH_UA] => "Not A(Brand";v="99", "Google Chrome";v="114", "Chromium";v="114"
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [CONTENT_TYPE] => application/x-www-form-urlencoded
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_REFERER] => https://fewo-mainau.de/index.html
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_ORIGIN] => https://fewo-mainau.de
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_DNT] => 1
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.5
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Vivaldi/5.3.2679.68
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [RZ_php] => 81
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [HTTPS] => on
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [SCRIPT_URL] => /formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [RZ_path] => web101/c2/18/5116218
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [RZ_n] => 5116218
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [UNIQUE_ID] => Z1LJ3mJaGrCb-6hs8sRuZQAACx8
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [FCGI_ROLE] => RESPONDER
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PHP_SELF] => /formmail.php
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [REQUEST_TIME_FLOAT] => 1733478879.4632
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [REQUEST_TIME] => 1733478879
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [argv] => Array
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] (
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] )
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [argc] => 0
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] )
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] submit requestArray
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] (
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Wohnung:] => Fewo Nr5
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Buchungszeitraum:] => 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Personenzahl:] => 2 Pers.
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Name:] => SEObyAxy
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Email:] => mckeeknight85065@gmail.com
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Telefon:] => 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Mobile:] => 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Strasse:] => Schachermairdorf 30
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [PLZ/Wohnort:] => 5602
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Nachricht:] => Hello
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] I noticed that you manage fewo-mainau.de, and I wanted to offer my help in improving its online visibility. 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] If you feel there are areas of your site that could benefit from optimization, I provide tailored SEO services to help drive more traffic and enhance its performance.
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] Would you be interested in an SEO audit or any other improvements for your site? 
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] If so, simply reply to this email with "yes" and I\xe2\x80\x99d be happy to discuss more details with you.
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] Looking forward to hearing from you!
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] Thanks,
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] SEObyAxy
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] To stop any further communication from us, please reply to this email with subject: Unsubscribe fewo-mainau.de
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [Zustimmung_Datenschutz:] => ja
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] [submit] => Senden
+06.12.2024 10:54:39 fewo-mainau.de [client 156.253.40.0] )
+06.12.2024 11:36:07 fewo-mainau.de [client 185.174.31.0] AH01225: Error reading request entity data
+06.12.2024 15:26:49 streettattoo.eu [client 142.93.1.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+06.12.2024 16:37:03 streettattoo.eu [client 184.154.11.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat
+06.12.2024 16:37:04 streettattoo.eu [client 184.154.11.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat
+06.12.2024 16:37:04 streettattoo.eu [client 184.154.11.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat
+06.12.2024 17:10:15 fewo-mainau.de [client 185.108.106.0] AH01225: Error reading request entity data
+06.12.2024 18:59:18 streettattoo.eu [client 206.189.19.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+06.12.2024 19:46:54 fewo-mainau.de [client 85.215.12.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/mah.php: script not found or unable to stat
+06.12.2024 19:47:19 fewo-mainau.de [client 85.215.12.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/simple.php: script not found or unable to stat
+06.12.2024 19:47:55 fewo-mainau.de [client 85.215.12.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/chosen.php: script not found or unable to stat
+06.12.2024 19:48:00 fewo-mainau.de [client 85.215.12.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/wp-add.php: script not found or unable to stat
+06.12.2024 20:00:40 streettattoo.eu [client 185.233.3.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/about.php: script not found or unable to stat
+06.12.2024 20:06:17 fewo-mainau.de [client 185.147.84.0] AH01225: Error reading request entity data
+07.12.2024 01:51:24 fewo-mainau.de [client 109.206.18.0] AH01225: Error reading request entity data
+07.12.2024 03:51:23 streettattoo.eu [client 185.233.3.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/versions.php: script not found or unable to stat
+07.12.2024 06:58:26 fewo-mainau.de [client 185.108.107.0] AH01225: Error reading request entity data
+07.12.2024 11:15:39 adamek.de [client 213.136.93.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/wp-login.php: script not found or unable to stat
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1RIBCFk39wdMT4HpX9A9gAACe4
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => http://www.google.com/url?url=fewo-mainau.de&yahoo.com
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.139.22
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 37806
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733576708.9534
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733576708
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:08 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1RIBVXn8hZyI1xZuFEpcgAADzQ
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => https://fewo-mainau.de/formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung Datenschutz:=1&submit=Senden
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.139.22
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 63560
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733576709.4419
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733576709
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+07.12.2024 14:05:09 fewo-mainau.de [client 184.154.11.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+07.12.2024 16:24:08 streettattoo.eu [client 184.154.11.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat
+08.12.2024 08:33:38 streettattoo.eu [client 164.90.80.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+08.12.2024 15:41:37 streettattoo.eu [client 157.245.113.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+08.12.2024 15:59:12 streettattoo.eu [client 164.90.80.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/info.php: script not found or unable to stat
+08.12.2024 16:06:00 brickfilm.eu [client 35.226.68.0] AH01225: Error reading request entity data
+08.12.2024 16:24:03 streettattoo.eu [client 184.154.11.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat
+08.12.2024 18:11:13 adamek.de [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/adamek
+08.12.2024 18:11:13 adamek.de [client 39.180.68.0] AH01797: client denied by server configuration: /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/index.php.bak
+08.12.2024 20:48:36 streettattoo.eu [client 54.176.86.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/go.php: script not found or unable to stat
+08.12.2024 20:48:45 streettattoo.eu [client 54.176.86.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-22.php: script not found or unable to stat
+08.12.2024 20:48:53 streettattoo.eu [client 54.176.86.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/1ppy.php: script not found or unable to stat
+08.12.2024 20:49:00 streettattoo.eu [client 54.176.86.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/luuf.php: script not found or unable to stat
+08.12.2024 22:07:31 adamek.de [client 2a0b:4140:4c00::] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/index.php: script not found or unable to stat
+09.12.2024 03:04:27 quantum-leap.net [client 145.239.10.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/julian/dm2.php: script not found or unable to stat
+09.12.2024 03:04:27 quantum-leap.net [client 145.239.10.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/julian/payload.php: script not found or unable to stat
+09.12.2024 03:04:27 quantum-leap.net [client 145.239.10.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/julian/sym403.php: script not found or unable to stat
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] submit headerArray
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] (
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_HOST] => fewo-mainau.de
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [REMOTE_ADDR] => 88.72.113.37
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [TZ] => MET
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_MAX_REQUESTS] => 200
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_CHILDREN] => 12
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_CACHE] => 1
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_FLUSH] => 1
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_FCGI_IDLE] => 6
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SCRIPT_NAME] => /formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [REQUEST_URI] => /formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [QUERY_STRING] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SERVER_PROTOCOL] => HTTP/1.1
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [GATEWAY_INTERFACE] => CGI/1.1
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [REMOTE_PORT] => 52360
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SERVER_ADMIN] => service@webmailer.de
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SERVER_PORT] => 443
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SERVER_NAME] => fewo-mainau.de
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [CONTENT_LENGTH] => 247
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_SEC_FETCH_SITE] => same-origin
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_SEC_FETCH_MODE] => cors
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_SEC_FETCH_DEST] => empty
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_REFERER] => https://fewo-mainau.de/
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_DNT] => 1
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_ORIGIN] => https://fewo-mainau.de
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=UTF-8
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_ACCEPT_LANGUAGE] => de,en-US;q=0.7,en;q=0.3
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_ACCEPT] => */*
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [RZ_php] => 81
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [HTTPS] => on
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [SCRIPT_URL] => /formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [RZ_path] => web101/c2/18/5116218
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [RZ_n] => 5116218
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [UNIQUE_ID] => Z1bOEdAujrqs-m-Joh7bHQAADws
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [FCGI_ROLE] => RESPONDER
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PHP_SELF] => /formmail.php
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [REQUEST_TIME_FLOAT] => 1733742097.8995
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [REQUEST_TIME] => 1733742097
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [argv] => Array
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] (
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] )
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [argc] => 0
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] )
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] submit requestArray
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] (
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Wohnung:] => Apartment Nr13
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Buchungszeitraum:] => 29/12/2024 - 02/01/2025
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Personenzahl:] => 2 Pers.
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Name:] => Richter
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Email:] => la.s.richter@gmail.com
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Telefon:] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Mobile:] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Strasse:] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [PLZ/Wohnort:] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Nachricht:] => 
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] [Zustimmung_Datenschutz:] => ja
+09.12.2024 12:01:37 fewo-mainau.de [client 88.72.113.0] )
+09.12.2024 13:15:50 adamek.de [client 2a0b:4140:4c00::] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/adamek/index.php: script not found or unable to stat
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1brLkP5Z4CupQCxFAuHEwAACQE
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => http://www.google.com/url?url=fewo-mainau.de&yahoo.com
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.76.22
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 44822
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733749550.9454
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733749550
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:50 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit headerArray
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [UNIQUE_ID] => Z1brL1mHpQ0iMXAClKS8ygAAB9c
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_n] => 5116218
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_path] => web101/c2/18/5116218
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URL] => /formmail.php
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTPS] => on
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [RZ_php] => 81
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_HOST] => fewo-mainau.de
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_REFERER] => https://fewo-mainau.de/formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung Datenschutz:=1&submit=Senden
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [HTTP_USER_AGENT] => Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/6.0)
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_NAME] => fewo-mainau.de
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PORT] => 443
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_ADDR] => 184.154.76.22
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_ADMIN] => service@webmailer.de
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REMOTE_PORT] => 45008
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [GATEWAY_INTERFACE] => CGI/1.1
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SERVER_PROTOCOL] => HTTP/1.1
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [QUERY_STRING] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_URI] => /formmail.php?Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [SCRIPT_NAME] => /formmail.php
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [PHP_SELF] => /formmail.php
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME_FLOAT] => 1733749551.4806
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [REQUEST_TIME] => 1733749551
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argv] => Array
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         (
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:             [0] => Buchungszeitraum:=1&Email:=1&Mobile:=1&Nachricht:=1&Name:=1&PLZ/Wohnort:=1&Personenzahl:=Personenzahl&Strasse:=1&Telefon:=1&Wohnung:=Wohnungsauswahl&Zustimmung%20Datenschutz:=1&submit=Senden
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:         )
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php:     [argc] => 1
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: submit requestArray
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: (
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: )
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: 
+09.12.2024 14:05:51 fewo-mainau.de [client 184.154.76.0] AH01215: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php: PHP Warning:  Undefined array key "Name:" in /mnt/web101/c2/18/5116218/htdocs/FewoMainau/formmail.php on line 9
+09.12.2024 14:50:32 fewo-mainau.de [client 212.102.40.0] AH01225: Error reading request entity data
+09.12.2024 16:37:52 streettattoo.eu [client 184.154.76.0] AH02811: stderr from /home/strato/http/premium/rid/62/18/5116218/htdocs/streettattoo/wp-login.php: script not found or unable to stat

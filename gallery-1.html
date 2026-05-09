@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bildergalerie Fahr am Main</title>
+    <meta name="description" content="Bildergalerie">
+    <meta name="keywords" content="Bilder, Fahr am Main, Volkach">
+    
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+	<script src="js/prettyPhoto/js/jquery-1.6.4.min.js"></script>
+	<script>
+	var $j = jQuery.noConflict();
+	</script>
+	<script  src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+	<link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css"  media="screen" />
+		
+   </head>
+
+<body>
+
+<div class="gallery">
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/bank-faehre.jpg" title="an der Fähranlegestelle"><img src="img/rast-an-faehre.jpg" alt="Fahr"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/fahr.jpg" class="hidden" title="der Blick auf Fahr"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/dorfstrasse.jpg" class="hidden" title="die Dorfstraße"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/heiligenfigur.jpg" class="hidden" title="Glauben in der Dorfstrasse"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/torschluss.jpg" class="hidden" title="Torschluss in der Traubengasse"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/loewentanz.jpg" class="hidden" title="Fahrer Wolkenkratzer"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/badesee.jpg" class="hidden" title="der Badesee ca. 100 m von der Ferienwohnung"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/mainfront.jpg" class="hidden" title="den Badesee im Rücken"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/elgersheim.jpg" class="hidden" title="Elgersheim"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/weinlese.jpg" class="hidden" title="Weinlese"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/apart/haengematte.jpg" class="hidden" title="das Ferienapartment am Fahrradweg"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/faehrenfest.jpg" class="hidden" title="das Fährenfest"></a>
+			<a rel="prettyPhoto[gallery1]" href="img/fahr/mainfaehre-1.jpg" class="hidden" title="die Mainfähre"></a>						
+  
+</div>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+  $j(document).ready(function(){
+    $j("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+<script>
+// When the user clicks on any button with class openBtn, open the corresponding modal
+document.querySelectorAll('.openBtn').forEach(item => {
+  item.addEventListener('click', function() {
+    var modal = document.getElementById(this.getAttribute('data-target'));
+    if(modal) {
+      modal.style.display = "block";
+    }
+  })
+})
+
+// When the user clicks on <span> (x), close the modal
+document.querySelectorAll('.close').forEach(item => {
+  item.addEventListener('click', function() {
+    var modal = this.closest('.modal');
+    if(modal) {
+      modal.style.display = "none";
+    }
+  })
+})
+
+document.addEventListener('click', function(event) {
+  // Check if the clicked element is not a modal button
+  if (!event.target.classList.contains('openBtn')) {
+    // Check if the clicked element is outside the modal content
+    let withinModalContent = event.target.closest('.modal-content');
+    let modalIsOpen = document.querySelector('.modal[style*="display: block"]');
+
+    if (!withinModalContent && modalIsOpen) {
+      modalIsOpen.style.display = 'none';
+    }
+  }
+});
+
+</script>
+	
+		</body>
+		</html>

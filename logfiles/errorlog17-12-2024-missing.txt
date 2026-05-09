@@ -1,0 +1,73 @@
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] submit headerArray
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] (
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_HOST] => fewo-mainau.de
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [REMOTE_ADDR] => 2.203.233.209
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [TZ] => MET
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_MAX_REQUESTS] => 200
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_CHILDREN] => 12
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_STARTUP_REQUESTS] => 2
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_CACHE] => 1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_FLUSH] => 1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_FCGI_IDLE] => 6
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SCRIPT_NAME] => /formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [REQUEST_URI] => /formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [QUERY_STRING] => 
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SERVER_PROTOCOL] => HTTP/1.1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [GATEWAY_INTERFACE] => CGI/1.1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [REMOTE_PORT] => 59401
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SERVER_ADMIN] => service@webmailer.de
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SERVER_PORT] => 443
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SERVER_NAME] => fewo-mainau.de
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [CONTENT_LENGTH] => 297
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_PRIORITY] => u=1, i
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_COOKIE] => hidecookiepolicy=1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_ACCEPT_LANGUAGE] => de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_REFERER] => https://fewo-mainau.de/
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_FETCH_DEST] => empty
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_FETCH_MODE] => cors
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_FETCH_SITE] => same-origin
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_ORIGIN] => https://fewo-mainau.de
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_CH_UA_MOBILE] => ?1
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=UTF-8
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_CH_UA] => "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_ACCEPT] => */*
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_USER_AGENT] => Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTP_SEC_CH_UA_PLATFORM] => "Android"
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [RZ_php] => 81
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [HTTPS] => on
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [SCRIPT_URL] => /formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [RZ_path] => web101/c2/18/5116218
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [RZ_n] => 5116218
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [UNIQUE_ID] => Z2BEL5LA4VnzX09Bc4ZpwQAAD5o
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [FCGI_ROLE] => RESPONDER
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PHP_SELF] => /formmail.php
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [REQUEST_TIME_FLOAT] => 1734362159.3969
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [REQUEST_TIME] => 1734362159
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [argv] => Array
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] (
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] )
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [argc] => 0
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] )
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] submit requestArray
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] (
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Wohnung:] => Apartment Nr13
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Buchungszeitraum:] => 30/12/2024 - 01/01/2025
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Personenzahl:] => 3 Pers.
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Name:] => Biert\xc3\xbcmpfel, Denise
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Email:] => debiert@web.de
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Telefon:] => 01702024154
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Mobile:] => 
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Strasse:] => Am Johannisberg 15
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [PLZ/Wohnort:] => 07747 Jena
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Nachricht:] => 
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] [Zustimmung_Datenschutz:] => ja
+16.12.2024 16:15:59 fewo-mainau.de [client 2.203.105.0] )

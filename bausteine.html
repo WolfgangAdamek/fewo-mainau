@@ -1,0 +1,344 @@
+
+<!-- Slider -->
+
+<div id="imageSlider2" class="carousel slide" data-ride="carousel">
+            <!-- Pagination -->
+            <ol class="carousel-indicators">
+                <li data-target="#imageSlider2" data-slide-to="0" class="active"></li>
+                <li data-target="#imageSlider2" data-slide-to="1"></li>
+                <li data-target="#imageSlider2" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/apart/wohnzimmer.jpg" alt="Slide 1">
+                </div>
+                <div class="item">
+                    <img src="img/apart/kueche.jpg" alt="Slide 2">
+                </div>
+                <div class="item">
+                    <img src="img/apart/terrasse1a.jpg" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <a class="left carousel-control" href="#imageSlider2" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#imageSlider2" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+		
+        </div>
+<!-- End Slider -->
+
+<!-- Modal -->
+<img src="image1-url.jpg" class="openBtn" data-target="modal1" alt="Open" style="width:100px; cursor:pointer;">
+<img src="image2-url.jpg" class="openBtn" data-target="modal2" alt="Open" style="width:100px; cursor:pointer;">
+
+<!-- The Modals -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal 1.</p>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal 2.</p>
+  </div>
+</div>
+
+
+<script>
+// When the user clicks on any button with class openBtn, open the corresponding modal
+document.querySelectorAll('.openBtn').forEach(item => {
+  item.addEventListener('click', function() {
+    var modal = document.getElementById(this.getAttribute('data-target'));
+    if(modal) {
+      modal.style.display = "block";
+    }
+  })
+})
+
+// When the user clicks on <span> (x), close the modal
+document.querySelectorAll('.close').forEach(item => {
+  item.addEventListener('click', function() {
+    var modal = this.closest('.modal');
+    if(modal) {
+      modal.style.display = "none";
+    }
+  })
+})
+
+document.addEventListener('click', function(event) {
+  // Check if the clicked element is not a modal button
+  if (!event.target.classList.contains('openBtn')) {
+    // Check if the clicked element is outside the modal content
+    let withinModalContent = event.target.closest('.modal-content');
+    let modalIsOpen = document.querySelector('.modal[style*="display: block"]');
+
+    if (!withinModalContent && modalIsOpen) {
+      modalIsOpen.style.display = 'none';
+    }
+  }
+});
+
+</script>
+<!-- Ende Modal -->
+<!-- Object Beispiel -->
+<object data="carousel-3.html" style="width: 100%; aspect-ratio: 4/3;}"></object>
+
+<!-- anklickbarer Container -->
+<a href="javascript:void(0);" onclick="toggleDataText()">Impressum & Datenschutz</a>
+<div class="zettel" id="data-text" style="display: none;">
+  <div>
+    <span onclick="toggleDataText()" id="cookiepolicyCloser">&times;</span>
+	<div>text text text
+	</div>> 
+  </div>
+</div>
+
+<script>
+  // Function to toggle example text visibility
+  function toggleDataText() {
+    var dataText = document.getElementById('data-text');
+    dataText.style.display = dataText.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Close example text when clicking anywhere outside of it
+  document.addEventListener('click', function(event) {
+    var dataText = document.getElementById('data-text');
+    var targetElement = event.target; // Element that triggered the event
+
+    // Check if the click occurred outside of the example text container
+    if (!dataText.contains(targetElement) && targetElement.getAttribute('onclick') !== 'toggleDataText()') {
+      dataText.style.display = 'none';
+    }
+  });
+</script>
+
+
+<!-- Accordion close by click outside its body -->
+	<!-- dazugehoeriges html -->
+	<!-- Accordion 1 -->
+<button id="accordion1" class="accordion">Title 1</button>
+<div id="panel1" class="panel">
+  <h4>Heading 1</h4>
+  <ul>
+    <li>Text 1-1</li>
+    <li>Text 1-2</li>
+    <li>Text 1-3</li>
+  </ul>
+</div>
+
+<!-- Accordion 2 -->
+<button id="accordion2" class="accordion">Title 2</button>
+<div id="panel2" class="panel">
+  <h4>Heading 2</h4>
+  <ul>
+    <li>Text 2-1</li>
+    <li>Text 2-2</li>
+    <li>Text 2-3</li>
+  </ul>
+</div>
+<!-- dazugehoeriges script -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    // Function to toggle the accordion
+    function toggleAccordion(accordionId, panelId) {
+        var accordion = document.getElementById(accordionId);
+        var panel = document.getElementById(panelId);
+
+        accordion.addEventListener('click', function (e) {
+            // Stop the event from bubbling up to the window click listener
+            e.stopPropagation();
+
+            // Toggle active class to open or close the accordion
+            this.classList.toggle('active');
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.display = "block";
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+
+    // Initialize each accordion by passing the IDs
+    toggleAccordion('accordion1', 'panel1');
+    toggleAccordion('accordion2', 'panel2');
+
+    // Close the accordion if the user clicks outside of it
+    window.addEventListener('click', function () {
+        var accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(function (accordion) {
+            var panelId = accordion.getAttribute('id').replace('accordion', 'panel');
+            var panel = document.getElementById(panelId);
+            
+            if (panel.style.display === "block") {
+                // Remove active class and close the panel
+                accordion.classList.remove('active');
+                panel.style.display = "none";
+                panel.style.maxHeight = null;
+            }
+        });
+    }); // No need for the capture phase in this case
+});
+</script>
+<!-- ende accordion -->
+.bubble-left {
+  /* Modify size here: */
+  --size: 50px;
+
+  position: relative;
+  width: var(--size);
+  height: calc(var(--size) * 0.66);
+  background: #333;
+  border-radius: 10px;
+}
+
+.bubble-left:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: calc(var(--size) * 0.13) solid transparent;
+  border-right-color: #333;
+  border-left: 0;
+  margin-top: calc(var(--size) * 0.13 * -1);
+  margin-left: calc(var(--size) * 0.13 * -1);
+}
+
+<!-- resposive fonts Beispiel -->
+.probootstrap-heading .primary-heading {
+  font-family: "Aramisi";
+  color: #FFA33E;
+  margin: 0;
+  padding: 0;
+  font-size: 4.5vw; /* Adjust base size and scaling factor as needed */
+}
+
+.probootstrap-heading .secondary-heading {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  letter-spacing: .05em;
+  font-size: 3vw; /* Adjust base size and scaling factor as needed */
+  position: relative;
+  top: -1vw; /* Adjust for a proportional top offset */
+  font-weight: 700;
+  line-height: 1.2; /* Use a unitless value for line-height to make it relative to the font size */
+}
+
+/* You may need to adjust the vw values for very small or very large viewports */
+/* For better control, you could add a minimum font size using min() CSS function, e.g., font-size: min(4vw, 60px); */
+
+<!-- The Modal formular send antwort formmailer-->
+<!-- The Modal -->
+<div id="myModal" class="modal" style="display:none;">
+ <span class="close" id="carousel-closer"><img src="img/close-121.svg"></span>
+  <!-- Modal content -->
+  <div class="text-center" style="width:100%; height: 100%; background-color:#fff; background-size:cover; opacity:0.8; line-height: 25px; font-size:20px; padding-top:100px; color:#000; margin:auto;">
+   
+    <p><strong>Die Nachricht wurde erfolgreich versendet.</strong><br>
+	Vielen Dank.<br> Wir antworten in Kürze.</p>
+	<img src="img/antwort.png">
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    // Attach the submit event handler to all forms with the class 'myForm'
+    $('.contactForm').submit(function(e) {
+        e.preventDefault(); // Prevent default form submission
+        var formData = $(this).serialize(); // Serialize the active form data
+
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'), // Get the action URL to submit the form data
+            data: formData,
+            success: function(response) {
+                // Assuming your PHP script echoes "success" if mail was sent
+                if(response.includes("success")) {
+                    $('#myModal').show(); // Show the modal if mail was sent
+                } else {
+                    // Handle failure, maybe show a different message or modal
+                }
+            }
+        });
+    });
+
+    // Modal close logic (remains the same)
+    var span = document.getElementsByClassName('close')[0];
+    span.onclick = function() {
+        $('#myModal').hide();
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('myModal')) {
+            $('#myModal').hide();
+        }
+    }
+});
+</script>
+<!-- end PHP für formmailer -->
+
+<!-- lazy blurred background image -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Image</title>
+    <style>
+        .overlay {
+            width: 100%;
+            height: 300px; /* Set this to your desired height */
+            background-image: url('path_to_blurred_image.jpg'); /* Your blurred image */
+            background-size: cover;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            display: block; /* Remove the space below the image */
+            opacity: 0; /* Hide until loaded */
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" data-stellar-background-ratio="0.5">
+        <img src="path_to_blurred_image.jpg" 
+             data-src="path_to_high_res_image.jpg" 
+             alt="Descriptive text of the image" 
+             class="lazyload" />
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.getAttribute('data-src');
+                        img.onload = () => img.style.opacity = 1;
+                        observer.unobserve(img);
+                    }
+                });
+            }, { rootMargin: "100px" });
+
+            document.querySelectorAll('img.lazyload').forEach(img => {
+                observer.observe(img);
+            });
+        });
+    </script>
+</body>
+</html>

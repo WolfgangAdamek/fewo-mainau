@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Lightbox</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+/* style.css */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.gallery img.thumbnail {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.lightbox-slide {
+  display: none; /* Keep this to initially hide slides */
+  width: 100%;
+  max-width: 700px;
+  transition: opacity 0.5s ease; /* Add transition for opacity */
+  opacity: 0; /* Start with slides fully transparent */
+}
+
+.close, .next, .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.close {
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next:hover, .prev:hover, .close:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+</style>
+
+<body>
+
+<div class="gallery">
+  <img class="thumbnail" src="img/volkach/marktplatz-2.jpg" alt="Image 1" onclick="openLightbox(); setCurrentSlide(1)">
+  <img class="thumbnail" src="img/volkach/brunnenschoppen.jpg"  alt="Image 2" onclick="openLightbox(); setCurrentSlide(2)">
+  <img class="thumbnail" src="img/volkach/hauptstrasse.jpg" alt="Image 3" onclick="openLightbox(); setCurrentSlide(3)">
+  <!-- Add more thumbnails as needed -->
+</div>
+
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  <div class="lightbox-content">
+    <img class="lightbox-slide" src="img/volkach/marktplatz-2.jpg" alt="Image 1">
+    <img class="lightbox-slide" src="img/volkach/brunnenschoppen.jpg" alt="Image 2">
+    <img class="lightbox-slide" src="img/volkach/hauptstrasse.jpg" alt="Image 3">
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+
+
+
+<script>
+let slideIndex = 1;
+
+function openLightbox() {
+  document.getElementById('lightbox').style.display = 'block';
+  showSlides(slideIndex);
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function setCurrentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("lightbox-slide");
+  if (n > slides.length) {slideIndex = 1;}
+  if (n < 1) {slideIndex = slides.length;}
+  
+  // Hide all slides and reset opacity
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].style.opacity = 0;
+  }
+
+  // First, make the slide visible but fully transparent
+  slides[slideIndex-1].style.display = "block";
+  
+  // Use a timeout to allow the browser to render the slide as visible before starting the opacity transition
+  setTimeout(function() {
+    slides[slideIndex-1].style.opacity = 1;
+  }, 200); // A small delay is enough
+}
+
+</script>
+
+
+</body>
+</html>

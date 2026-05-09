@@ -1,0 +1,70 @@
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] submit headerArray
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] (
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_HOST] => fewo-mainau.de
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [REMOTE_ADDR] => 2003:cb:3f0a:15ca:d48e:6d0b:a79a:9d26
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [TZ] => MET
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_MAX_REQUESTS] => 200
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_CHILDREN] => 12
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_STARTUP_REQUESTS] => 2
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_CACHE] => 1
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_FLUSH] => 1
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [DOCUMENT_ROOT] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_FILENAME] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHPRC] => /home/strato/http/premium/rid/62/18/5116218/htdocs/FewoMainau/
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_FCGI_IDLE] => 6
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_NAME] => /formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_URI] => /formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [QUERY_STRING] => 
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_PROTOCOL] => HTTP/1.1
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [GATEWAY_INTERFACE] => CGI/1.1
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [REMOTE_PORT] => 53013
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_ADMIN] => service@webmailer.de
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_PORT] => 443
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_NAME] => fewo-mainau.de
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SERVER_SOFTWARE] => Apache/2.4.62 (Unix)
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [CONTENT_LENGTH] => 282
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_PRIORITY] => u=0
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_SITE] => same-origin
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_MODE] => cors
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_SEC_FETCH_DEST] => empty
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_REFERER] => https://fewo-mainau.de/
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_DNT] => 1
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ORIGIN] => https://fewo-mainau.de
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [CONTENT_TYPE] => application/x-www-form-urlencoded; charset=UTF-8
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT_ENCODING] => gzip, deflate, br, zstd
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT_LANGUAGE] => de,en-US;q=0.7,en;q=0.3
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_ACCEPT] => */*
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [RZ_php] => 81
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [HTTPS] => on
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_URI] => https://fewo-mainau.de/formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [SCRIPT_URL] => /formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [RZ_path] => web101/c2/18/5116218
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [RZ_a] => :Rhttp-301:Cpremium:quota=102400MB:scgi=2:php=81:fcgi=1:media:forcessl=301:crt=20283830:tpl=strato-standard-emig:
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [RZ_n] => 5116218
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [UNIQUE_ID] => Z2FUWSTS8b0csy-aK2PJ-wAABAc
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [FCGI_ROLE] => RESPONDER
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PHP_SELF] => /formmail.php
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_TIME_FLOAT] => 1734431834.1794
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [REQUEST_TIME] => 1734431834
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [argv] => Array
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] (
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] )
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [argc] => 0
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] )
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] submit requestArray
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] (
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Wohnung:] => Apartment Nr13
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Buchungszeitraum:] => 18/12/2024 - 18/12/2024
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Personenzahl:] => 1 Pers.
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Name:] => Wolfgang
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Email:] => mail@adamek.de
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Telefon:] => 1234567
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Mobile:] => 
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Strasse:] => Maingasse 13
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [PLZ/Wohnort:] => Volkach
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Nachricht:] => nichts zu fragen
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] [Zustimmung_Datenschutz:] => ja
+17.12.2024 11:37:14 fewo-mainau.de [client 2003:cb:3f00::] )
