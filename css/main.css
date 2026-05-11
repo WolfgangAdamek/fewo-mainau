@@ -7,6 +7,7 @@
   --accent: #ffa33e;
   --accent-2: #337ab7;
   --shadow: 0 18px 45px rgba(31, 42, 46, 0.16);
+  --nav-scroll-offset: 92px;
 }
 
 @font-face {
@@ -106,6 +107,7 @@ button {
 }
 
 .site-header {
+  --header-height: 112px;
   position: fixed;
   inset: 0 0 auto;
   z-index: 100;
@@ -117,6 +119,7 @@ button {
 
 .site-header.is-scrolled,
 .site-header.is-menu-open {
+  --header-height: 68px;
   background: rgba(255, 255, 255, 0.94);
   border-bottom-color: rgba(0, 0, 0, 0.08);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -128,9 +131,10 @@ button {
   align-items: center;
   justify-content: space-between;
   max-width: 1180px;
-  min-height: 68px;
+  min-height: var(--header-height);
   margin: 0 auto;
   padding: 0 24px;
+  transition: min-height 260ms ease;
 }
 
 .brand {
@@ -140,7 +144,8 @@ button {
   color: var(--ink);
   background: url("../img/logo.png") left top / 150px 80px no-repeat;
   text-decoration: none;
-  transition: transform 220ms ease;
+  transform: translateY(14px);
+  transition: background-position 220ms ease, transform 260ms ease;
 }
 
 .brand img {
@@ -153,6 +158,7 @@ button {
 .site-header.is-scrolled .brand,
 .site-header.is-menu-open .brand {
   background-position: left bottom;
+  transform: translateY(0);
 }
 
 .brand span {
@@ -179,12 +185,14 @@ button {
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 180ms ease;
+  transform: translateY(14px);
+  transition: color 180ms ease, transform 260ms ease;
 }
 
 .site-header.is-scrolled .nav-links a,
 .site-header.is-menu-open .nav-links a {
   color: rgba(0, 0, 0, 0.72);
+  transform: translateY(0);
 }
 
 .nav-links a:hover,
@@ -287,10 +295,9 @@ button {
   text-align: center;
 }
 
-.hero span,
+.hero .primary-heading,
 .eyebrow {
   display: block;
-  margin-bottom: 8px;
   color: var(--accent);
   font-family: "Aramisi", "Open Sans Mainau", sans-serif;
   font-size: clamp(2.2em, 4.2vw, 3.75em);
@@ -298,8 +305,12 @@ button {
   line-height: 1.2;
 }
 
-.hero span {
-  color: var(--accent);
+.hero .primary-heading {
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  margin-bottom: -0.22em;
 }
 
 h1,
@@ -309,8 +320,8 @@ h4 {
   line-height: 1.18;
 }
 
-h1,
-.hero h2 {
+.hero h1,
+.hero .hero-title {
   margin: 0;
   font-family: "Open Sans Mainau", Arial, sans-serif;
   font-size: clamp(1.8em, 3.2vw, 2.8em);
@@ -318,14 +329,29 @@ h1,
   text-transform: uppercase;
   letter-spacing: .04em;
   position: relative;
-  top: -1.8vw;
+  top: -1.1vw;
 }
 
-.hero p {
+.hero .mainau {
+  color: inherit;
+}
+
+.hero .subsub-heading {
+  display: block;
+  margin-top: 0.02em;
+  font-size: clamp(0.62em, 1.65vw, 0.8em);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.15;
+  text-transform: none;
+}
+
+.hero .sub-heading {
   max-width: 720px;
-  margin: 18px auto 0;
-  font-size: clamp(1.2em, 1.4vw, 1.8em);
+  margin: 2px auto 0;
+  font-size: clamp(1.0em, 1.25vw, 1.45em);
   font-weight: 700;
+  line-height: 1.18;
 }
 
 .wrap {
@@ -334,12 +360,22 @@ h1,
   padding: 0 24px;
 }
 
+#welcome,
+#auswahl,
+#preise-details,
+#buchung,
+#galerie,
+#kontakt,
+.anchor-target {
+  scroll-margin-top: var(--nav-scroll-offset);
+}
+
 .narrow {
   max-width: 860px;
 }
 
 .section {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 .muted {
@@ -347,20 +383,20 @@ h1,
 }
 
 .intro {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 .intro .eyebrow,
-.intro h2,
+.intro .section-title,
 .intro .lead {
   text-align: center;
 }
 
-.intro h2,
-.split-section h2,
-.banner h2,
-.contact h2 {
+.intro .section-title,
+.split-section .section-title,
+.banner .section-title,
+.contact .section-title {
   margin: 0 0 12px;
   font-family: "Open Sans Mainau", Arial, sans-serif;
   font-size: clamp(1.8em, 3.2vw, 2.8em);
@@ -370,7 +406,7 @@ h1,
   color: #000;
 }
 
-.banner h2 {
+.banner .section-title {
   color: #fff;
 }
 
@@ -399,7 +435,7 @@ h1,
   margin-top: 0;
 }
 
-.split-section h2 {
+.split-section .section-title {
   margin-bottom: 20px;
 }
 
@@ -438,6 +474,8 @@ h1,
   width: 44px;
   height: 54px;
   color: #fff;
+  font-size: 42px;
+  line-height: 1;
   background: rgba(0, 0, 0, 0.32);
   border: 0;
   transform: translateY(-50%);
@@ -576,7 +614,7 @@ h1,
   text-align: center;
 }
 
-.apartment-heading h2 {
+.apartment-heading .apartment-title {
   margin: 0;
   color: #747474;
   font-family: "Open Sans Mainau", Arial, sans-serif;
@@ -746,6 +784,7 @@ textarea:focus {
 }
 
 textarea {
+  height: 46px;
   resize: vertical;
 }
 
@@ -938,8 +977,12 @@ textarea {
 
 .consent input {
   width: 18px;
+  height: 18px;
   min-height: 18px;
   margin-top: 5px;
+  padding: 0;
+  accent-color: var(--accent);
+  appearance: auto;
 }
 
 .primary-btn {
@@ -1020,7 +1063,7 @@ textarea {
 }
 
 .contact {
-  padding-top: 2em;
+  padding-top: 0em;
   text-align: center;
 }
 
@@ -1042,7 +1085,7 @@ textarea {
   padding-bottom: 38px;
 }
 
-.footer h2 {
+.footer h3 {
   margin-top: 0;
   font-size: 22px;
 }
@@ -1050,6 +1093,12 @@ textarea {
 .footer a,
 .footer .link-button {
   color: #f1c46a;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer .link-button:hover {
+  color: var(--accent);
 }
 
 .copyright {
@@ -1076,10 +1125,14 @@ textarea {
   display: none;
   padding: 10px 12px;
   color: #fff;
-  background: var(--accent-2);
+  background: var(--accent);
   border: 0;
   border-radius: 999px;
   box-shadow: var(--shadow);
+}
+
+.to-top:hover {
+  background: #713c20;
 }
 
 .to-top.is-visible {
@@ -1192,13 +1245,31 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --nav-scroll-offset: 84px;
+  }
+
+  .site-header {
+    --header-height: 72px;
+  }
+
+  .site-header.is-scrolled,
+  .site-header.is-menu-open {
+    --header-height: 64px;
+  }
+
+  .brand,
+  .nav-links a {
+    transform: none;
+  }
+
   .nav-toggle {
     display: block;
   }
 
   .nav-links {
     position: fixed;
-    inset: 68px 0 auto;
+    inset: var(--header-height) 0 auto;
     display: none;
     flex-direction: column;
     align-items: stretch;

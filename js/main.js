@@ -80,24 +80,40 @@
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
   const navAnchors = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
-  const navSections = navAnchors
-    .map((link) => document.querySelector(link.getAttribute('href')))
-    .filter(Boolean);
+  const navItems = navAnchors
+    .map((link) => ({
+      link,
+      section: document.querySelector(link.getAttribute('href'))
+    }))
+    .filter((item) => item.section);
+  const getNavOffset = () => {
+    const cssOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-scroll-offset'));
+    return Number.isFinite(cssOffset) ? cssOffset : 92;
+  };
   const updateActiveNav = () => {
-    const scrollPosition = window.scrollY + 140;
-    let activeSection = navSections[0];
-    navSections.forEach((section) => {
-      if (section.offsetTop <= scrollPosition) activeSection = section;
+    const activationLine = getNavOffset() + 1;
+    let activeItem = navItems[0];
+
+    navItems.forEach((item) => {
+      if (item.section.getBoundingClientRect().top <= activationLine) activeItem = item;
     });
-    navAnchors.forEach((link) => {
-      const isActive = link.getAttribute('href') === `#${activeSection?.id}`;
-      link.classList.toggle('is-active', isActive);
-      if (isActive) link.setAttribute('aria-current', 'page');
-      else link.removeAttribute('aria-current');
+
+    const hashItem = navItems.find((item) => item.link.hash === window.location.hash);
+    if (hashItem) {
+      const rect = hashItem.section.getBoundingClientRect();
+      if (rect.top <= activationLine && rect.bottom > activationLine) activeItem = hashItem;
+    }
+
+    navItems.forEach((item) => {
+      const isActive = item === activeItem;
+      item.link.classList.toggle('is-active', isActive);
+      if (isActive) item.link.setAttribute('aria-current', 'page');
+      else item.link.removeAttribute('aria-current');
     });
   };
   updateActiveNav();
   window.addEventListener('scroll', updateActiveNav, { passive: true });
+  window.addEventListener('hashchange', updateActiveNav);
   window.addEventListener('resize', updateActiveNav);
 
   navToggle?.addEventListener('click', () => {
@@ -122,7 +138,7 @@
     parallaxSections.forEach((section) => {
       const rect = section.getBoundingClientRect();
       if (rect.bottom < 0 || rect.top > viewportHeight) return;
-      const offset = (rect.top + rect.height / 2 - viewportHeight / 2) * -0.14;
+      const offset = (rect.top + rect.height / 2 - viewportHeight / 2) * -0.24;
       section.style.setProperty('--parallax-y', `calc(50% + ${offset.toFixed(1)}px)`);
     });
   };
