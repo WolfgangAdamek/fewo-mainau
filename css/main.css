@@ -239,8 +239,8 @@ button {
 }
 
 .hero-slider {
+  height: 750px;
   min-height: 750px;
-  min-height: max(750px, 100vh);
 }
 
 .slide {
@@ -260,8 +260,8 @@ button {
 }
 
 .hero .slide {
+  height: 750px;
   min-height: 750px;
-  min-height: max(750px, 100vh);
 }
 
 .slide img {
@@ -288,8 +288,8 @@ button {
   z-index: 1;
   display: grid;
   place-content: center;
+  height: 750px;
   min-height: 750px;
-  min-height: max(750px, 100vh);
   padding: 90px 24px 48px;
   color: #fff;
   text-align: center;
@@ -1355,8 +1355,8 @@ textarea {
   .hero-slider,
   .hero .slide,
   .hero figcaption {
-    min-height: 420px;
-    min-height: max(420px, 70vh);
+    height: 750px;
+    min-height: 750px;
   }
 
   .gallery-panel,
@@ -1378,5 +1378,14 @@ textarea {
     right: 10px;
     left: 10px;
     bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider,
+  .hero .slide,
+  .hero figcaption {
+    height: 350px;
+    min-height: 350px;
   }
 }
