@@ -61,8 +61,8 @@ Nach `671bada` wurden weitere Layout-, Navigations- und Formular-Korrekturen an 
 - Die Header-Navigation ist am Seitenanfang hoeher und schrumpft beim Scrollen auf die kompakte Variante; Logo und Navigationslinks bewegen sich dabei wie in der Vorlage etwas nach oben.
 - Die aktive Navigation nutzt einen gemeinsamen Scroll-Offset (`--nav-scroll-offset`) und eine robustere Viewport-Erkennung in `js/main.js`, damit Anker wie `Wohnungswahl` und `Preise` mit der Linkfarbe zusammenpassen.
 - Der Preis-Navigationslink springt gezielt auf `#preise-details` an der Preisueberschrift, sodass `Wohnungswahl` nicht zu frueh von `Preise` abgeloest wird.
-- Der schwarze Balken unter dem Welcome-Slider wurde adressiert, indem `hero-slider`, `.hero .slide` und `.hero figcaption` dieselbe Mindesthoehe erhalten.
-- Fuer kleine Bildschirme wurde eine niedrigere Hero-Hoehe ergaenzt.
+- Der schwarze Balken unter dem Welcome-Slider wurde adressiert, indem `hero-slider`, `.hero .slide` und `.hero figcaption` dieselbe Hoehe erhalten.
+- Die Hoehe des Eingangs-Hero-Sliders wurde wieder an die archivierte Vorlage angeglichen: 750px regulaer und 350px auf sehr kleinen Bildschirmen bis 480px.
 - Der zwischenzeitlich vereinfachte Buchungszeitraum mit zwei nativen Datumsfeldern wurde wieder durch ein einzelnes Textfeld `name="Buchungszeitraum:"` mit eigenem Range-Datepicker ersetzt. Der Datepicker ist direkt in `js/main.js` und `css/main.css` umgesetzt und nutzt keine externen Lightpick-/Moment-Dateien.
 - Alle Slider nutzen jetzt Fade-Uebergaenge statt harter Bildwechsel. Die gemeinsame Carousel-Komponente in `js/main.js` erzeugt fuer jeden Slider Bullet-Navigation am unteren Rand; aktive Slides werden farblich markiert und Bullet-Klicks springen direkt zum jeweiligen Bild.
 - Die weissen Vor-/Zurueck-Pfeile der Galerien wurden zentral ueber `.carousel-btn` vergroessert.
@@ -103,14 +103,13 @@ Nicht vollstaendig geprueft:
 Wenn in einem neuen Chat weitergemacht wird:
 
 1. Zuerst `git status --short` pruefen.
-2. Die uncommitted Aenderungen in `index.html` und `css/main.css` nicht verwerfen.
-3. Bei Layoutfragen immer zuerst mit der archivierten Vorlage vergleichen:
+2. Bei Layoutfragen immer zuerst mit der archivierten Vorlage vergleichen:
    - `_archive/legacy-template/index08-2024.html`
    - `_archive/legacy-template/index-ok.html`
    - `_archive/legacy-template/css/style.min.css`
-4. Fuer aktive Aenderungen nur die neue Struktur anfassen, vor allem `index.html`, `css/main.css`, `js/main.js`.
-5. Alte Dateien im Archiv nur als Referenz verwenden.
-6. Nach sichtbaren Aenderungen im Browser hart neu laden, da CSS sonst aus dem Cache kommen kann.
+3. Fuer aktive Aenderungen nur die neue Struktur anfassen, vor allem `index.html`, `css/main.css`, `js/main.js`.
+4. Alte Dateien im Archiv nur als Referenz verwenden.
+5. Nach sichtbaren Aenderungen im Browser hart neu laden, da CSS sonst aus dem Cache kommen kann.
 
 ## Noch sinnvolle naechste Schritte
 
