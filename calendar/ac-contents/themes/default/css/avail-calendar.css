@@ -11,19 +11,13 @@
 #cal_wrapper{
 	font: 11px/1.6 Arial, sans-serif;
 	color: #444;
-	width: auto;
+	width:670px;
 	margin:20px auto;
-	overflow: hidden !important;
-	display: grid;
-    grid-template-columns: 
-      
-      minmax(300px, 1200px)
-      
- ;
+	overflow: hidden;
 	}
 #the_months{
-	float:right; 
-	
+	float:left; 
+	width:534px;
 	}
 	
 .clear{	clear:both;}
