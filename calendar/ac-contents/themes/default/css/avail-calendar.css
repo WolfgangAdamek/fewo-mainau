@@ -8,16 +8,27 @@
 
 :root{scrollbar-width:thin;}
 
+html,
+body{
+	margin:0;
+	background:#FFF;
+	}
+
 #cal_wrapper{
 	font: 11px/1.6 Arial, sans-serif;
 	color: #444;
-	width:670px;
+	width:100%;
+	max-width:534px;
 	margin:20px auto;
 	overflow: hidden;
 	}
 #the_months{
-	float:left; 
-	width:534px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:6px;
+	float:none;
+	width:100%;
 	}
 	
 .clear{	clear:both;}
@@ -96,14 +107,14 @@ calendar month styles
 ***************************/
 .cal_month{
 	/* month div*/
+	flex:0 0 170px;
 	width:170px;
 	border:1px solid #636363;
 	background:#FFF;
 	line-height:20px;
 	padding-bottom:6px;
-	float:left;
-	margin-right:6px;
-	margin-bottom:6px;
+	float:none;
+	margin:0;
 	min-height:194px;
 	color:#666;
 	}
