@@ -449,6 +449,9 @@ h4 {
 }
 
 .gallery-panel {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
   aspect-ratio: 4 / 3;
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -1243,6 +1246,7 @@ textarea {
 
 .modal-gallery {
   width: 100%;
+  max-width: 800px;
   aspect-ratio: 4 / 3;
   border-radius: 0;
   box-shadow: none;
@@ -1374,11 +1378,6 @@ textarea {
   .hero figcaption {
     height: 750px;
     min-height: 750px;
-  }
-
-  .gallery-panel,
-  .modal-gallery {
-    aspect-ratio: 3 / 4;
   }
 
   .modal-iframe {

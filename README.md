@@ -66,8 +66,11 @@ Nach `671bada` wurden weitere Layout-, Navigations- und Formular-Korrekturen an 
 - Der zwischenzeitlich vereinfachte Buchungszeitraum mit zwei nativen Datumsfeldern wurde wieder durch ein einzelnes Textfeld `name="Buchungszeitraum:"` mit eigenem Range-Datepicker ersetzt. Der Datepicker ist direkt in `js/main.js` und `css/main.css` umgesetzt und nutzt keine externen Lightpick-/Moment-Dateien.
 - Alle Slider nutzen jetzt Fade-Uebergaenge statt harter Bildwechsel. Die gemeinsame Carousel-Komponente in `js/main.js` erzeugt fuer jeden Slider Bullet-Navigation am unteren Rand; aktive Slides werden farblich markiert und Bullet-Klicks springen direkt zum jeweiligen Bild.
 - Die weissen Vor-/Zurueck-Pfeile der Galerien wurden zentral ueber `.carousel-btn` vergroessert.
+- Galerie- und Modalbilder wurden auf eine zentrierte Maximalbreite von 800px begrenzt; das mobile Hochformat der Galerien wurde entfernt, damit Bilder konsistenter dargestellt werden.
 - Das Anfrageformular wurde optisch wieder naeher an die Vorlage gebracht: ruhige graue Formularschrift, Iconposition rechts im Eingabefeld und die benoetigte Icomoon-Schrift liegt aktiv unter `fonts/icomoon/`.
 - Ueberschriften wurden dort, wo es fuer die Dokumentstruktur sinnvoll war, von rein optischen `h2`-Elementen auf Klassen wie `.section-title` und `.apartment-title` umgestellt.
+- Das strukturierte `LodgingBusiness`-Markup wurde erweitert: Beschreibung, Bilder, Logo, Adresse mit Region, Geo-Koordinaten, Preisrahmen, Ausstattungsmerkmale sowie `hasMap`/`sameAs` zum Google-Business-/Maps-Profil.
+- Im Kontaktbereich ist das Google-Profil sichtbar verlinkt. Zusaetzlich wurde ein Google-Bewertungslink im Kontaktbereich und im Erfolgsdialog der Anfrage eingebaut, ohne kuenstliche Bewertungs-/Sterne-Markups zu setzen.
 
 Betroffene aktive Dateien:
 
