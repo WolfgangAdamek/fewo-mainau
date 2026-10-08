@@ -16,7 +16,7 @@
   <link rel="start" title="Startseite" href="https://fewo-mainau.de/">
   <link rel="copyright" title="Impressum" href="https://fewo-mainau.de/data-text.html">
   <link rel="canonical" href="https://fewo-mainau.de/">
-  <link rel="preload" as="image" href="img/Loggia-blick.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="img/Loggia-blick.webp" imagesrcset="img/Loggia-blick-800.webp 800w, img/Loggia-blick-1200.webp 1200w, img/Loggia-blick.webp 1900w" imagesizes="(max-width: 480px) 560px, (max-width: 960px) 120vw, 100vw" fetchpriority="high">
   <link rel="stylesheet" href="css/main.css">
   <meta property="st:section" content="Ferienwohnung in Volkach am Main, direkt am Mainufer der Mainschleife und dem Mainradweg gelegen - mit vielen Infos und Bildern für Ihre Urlaubsplanung">
   <meta property="og:locale" content="de_DE">
@@ -93,6 +93,10 @@
         {
           "@type": "LocationFeatureSpecification",
           "name": "Mit Mainblick"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Nähe zu Würzburg"
         }
       ]
     }
@@ -116,6 +120,7 @@
         <li><a href="#auswahl">Wohnungswahl</a></li>
         <li><a href="#preise-details">Preise</a></li>
         <li><a href="#buchung">Buchungsanfrage</a></li>
+        <li><a href="#radfahren">Radfahren</a></li>
         <li><a href="#galerie">Galerien</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
@@ -126,7 +131,7 @@
     <section id="welcome" class="hero" aria-label="Ferienwohnung Mainau">
       <div class="hero-slider" data-carousel data-autoplay="true">
         <figure class="slide is-active">
-          <img src="img/Loggia-blick.webp" alt="Blick von der Loggia auf den Main" fetchpriority="high">
+          <img src="img/Loggia-blick.webp" srcset="img/Loggia-blick-800.webp 800w, img/Loggia-blick-1200.webp 1200w, img/Loggia-blick.webp 1900w" sizes="(max-width: 480px) 560px, (max-width: 960px) 120vw, 100vw" width="1900" height="1200" alt="Blick von der Loggia auf den Main" fetchpriority="high">
           <figcaption>
             <div class="primary-heading">Quartier am Fluss</div>
             <h1 class="hero-title">Ferienwohnung <span class="mainau">Volkach</span><span class="subsub-heading">am Ufer der Mainschleife und dem Mainradweg</span></h1>
@@ -134,7 +139,7 @@
           </figcaption>
         </figure>
         <figure class="slide">
-          <img src="img/wohnraum.webp" alt="Wohnraum der Ferienwohnung">
+          <img src="img/wohnraum.webp" srcset="img/wohnraum-800.webp 800w, img/wohnraum-1200.webp 1200w, img/wohnraum.webp 1900w" sizes="(max-width: 480px) 560px, (max-width: 960px) 120vw, 100vw" width="1900" height="1200" loading="lazy" decoding="async" alt="Wohnraum der Ferienwohnung">
           <figcaption>
             <div class="primary-heading">Wohnen</div>
             <div class="hero-title">urig &amp; unkompliziert</div>
@@ -142,7 +147,7 @@
           </figcaption>
         </figure>
         <figure class="slide">
-          <img src="img/Fahr-am-main.webp" alt="Fahr am Main am Flussufer">
+          <img src="img/Fahr-am-main.webp" srcset="img/Fahr-am-main-800.webp 800w, img/Fahr-am-main-1200.webp 1200w, img/Fahr-am-main.webp 1900w" sizes="(max-width: 480px) 560px, (max-width: 960px) 120vw, 100vw" width="1900" height="1200" loading="lazy" decoding="async" alt="Fahr am Main am Flussufer">
           <figcaption>
             <div class="primary-heading">Willkommen</div>
             <h3 class="hero-title">Fahr am Main</h3>
@@ -177,15 +182,15 @@
           </ul>
         </div>
         <div class="gallery-panel" data-carousel>
-          <figure class="slide is-active"><img src="img/apart/apartment.jpg" alt="Ferienwohnung Mainau"><figcaption>Ferienwohnung Mainau</figcaption></figure>
-          <figure class="slide"><img src="img/aussen/apartment-aussen.jpg" alt="Aussenansicht Apartment"><figcaption>Apartment an der Mainseite</figcaption></figure>
-          <figure class="slide"><img src="img/aussen/Loggia-blick.jpg" alt="Blick vom Balkon"><figcaption>Blick vom Balkon</figcaption></figure>
-          <figure class="slide"><img src="img/fahr/mainufer.jpg" alt="Mainufer"><figcaption>am Mainufer</figcaption></figure>
-          <figure class="slide"><img src="img/aktiv/fahrradfahren.jpg" alt="Mainradweg"><figcaption>Mainradweg</figcaption></figure>
-          <figure class="slide"><img src="img/volkach/biergarten.jpg" alt="Biergarten"><figcaption>Biergarten</figcaption></figure>
-          <figure class="slide"><img src="img/aussen/faehre.jpg" alt="Mainfähre"><figcaption>Mainfähre</figcaption></figure>
-          <figure class="slide"><img src="img/aktiv/mainstrand.jpg" alt="Badesee"><figcaption>Badesee</figcaption></figure>
-          <figure class="slide"><img src="img/volkach/flaniermeile.jpg" alt="Flaniermeile Volkach"><figcaption>Volkach</figcaption></figure>
+          <figure class="slide is-active"><img src="img/apart/apartment.jpg" alt="Ferienwohnung Mainau" loading="lazy" decoding="async"><figcaption>Ferienwohnung Mainau</figcaption></figure>
+          <figure class="slide"><img data-src="img/aussen/apartment-aussen.jpg" alt="Aussenansicht Apartment" loading="lazy" decoding="async"><figcaption>Apartment an der Mainseite</figcaption></figure>
+          <figure class="slide"><img data-src="img/aussen/Loggia-blick.jpg" alt="Blick vom Balkon" loading="lazy" decoding="async"><figcaption>Blick vom Balkon</figcaption></figure>
+          <figure class="slide"><img data-src="img/fahr/mainufer.jpg" alt="Mainufer" loading="lazy" decoding="async"><figcaption>am Mainufer</figcaption></figure>
+          <figure class="slide"><img data-src="img/aktiv/fahrradfahren.jpg" alt="Mainradweg" loading="lazy" decoding="async"><figcaption>Mainradweg</figcaption></figure>
+          <figure class="slide"><img data-src="img/volkach/biergarten.jpg" alt="Biergarten" loading="lazy" decoding="async"><figcaption>Biergarten</figcaption></figure>
+          <figure class="slide"><img data-src="img/aussen/faehre.jpg" alt="Mainfähre" loading="lazy" decoding="async"><figcaption>Mainfähre</figcaption></figure>
+          <figure class="slide"><img data-src="img/aktiv/mainstrand.jpg" alt="Badesee" loading="lazy" decoding="async"><figcaption>Badesee</figcaption></figure>
+          <figure class="slide"><img data-src="img/volkach/flaniermeile.jpg" alt="Flaniermeile Volkach" loading="lazy" decoding="async"><figcaption>Volkach</figcaption></figure>
           <button class="carousel-btn prev" type="button" aria-label="Vorheriges Bild" data-prev>&lsaquo;</button>
           <button class="carousel-btn next" type="button" aria-label="Nächstes Bild" data-next>&rsaquo;</button>
         </div>
@@ -204,16 +209,16 @@
       <div class="wrap apartments">
         <article class="apartment">
           <div class="gallery-panel" data-carousel>
-            <figure class="slide is-active"><img src="img/apart/wohnraum.jpg" alt="Wohnbereich mit Mainblick"><figcaption>Wohnbereich mit Mainblick</figcaption></figure>
-            <figure class="slide"><img src="img/apart/loggia.jpg" alt="Loggia des Apartments"><figcaption>die Loggia des Apartments</figcaption></figure>
-            <figure class="slide"><img src="img/apart/esszimmer.jpg" alt="Essplatz"><figcaption>sonniger Essplatz für 4</figcaption></figure>
-            <figure class="slide"><img src="img/apart/kueche.jpg" alt="Küchenbereich"><figcaption>alles da in der Küchenecke</figcaption></figure>
-            <figure class="slide"><img src="img/apart/schlafzimmer.jpg" alt="Schlafgalerie"><figcaption>die Schlafgalerie für 2</figcaption></figure>
-            <figure class="slide"><img src="img/apart/bad.jpg" alt="Duschbad"><figcaption>Duschbad</figcaption></figure>
-            <figure class="slide"><img src="img/apart/haengematte.jpg" alt="Aussenplatz mit Haengematte"><figcaption>Aussenplatz zum Faulenzen</figcaption></figure>
-            <figure class="slide"><img src="img/apart/haengesessel.jpg" alt="Haengesessel"><figcaption>zum Abhaengen</figcaption></figure>
-            <figure class="slide"><img src="img/apart/fewo-abend.jpg" alt="Ferienapartment am Abend"><figcaption>Ferienapartment am Abend</figcaption></figure>
-            <figure class="slide"><img src="img/aussen/fewo.jpg" alt="Fewo Mainau"><figcaption>Willkommen</figcaption></figure>
+            <figure class="slide is-active"><img src="img/apart/wohnraum.jpg" alt="Wohnbereich mit Mainblick" loading="lazy" decoding="async"><figcaption>Wohnbereich mit Mainblick</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/loggia.jpg" alt="Loggia des Apartments" loading="lazy" decoding="async"><figcaption>die Loggia des Apartments</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/esszimmer.jpg" alt="Essplatz" loading="lazy" decoding="async"><figcaption>sonniger Essplatz für 4</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/kueche.jpg" alt="Küchenbereich" loading="lazy" decoding="async"><figcaption>alles da in der Küchenecke</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/schlafzimmer.jpg" alt="Schlafgalerie" loading="lazy" decoding="async"><figcaption>die Schlafgalerie für 2</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/bad.jpg" alt="Duschbad" loading="lazy" decoding="async"><figcaption>Duschbad</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/haengematte.jpg" alt="Aussenplatz mit Haengematte" loading="lazy" decoding="async"><figcaption>Aussenplatz zum Faulenzen</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/haengesessel.jpg" alt="Haengesessel" loading="lazy" decoding="async"><figcaption>zum Abhaengen</figcaption></figure>
+            <figure class="slide"><img data-src="img/apart/fewo-abend.jpg" alt="Ferienapartment am Abend" loading="lazy" decoding="async"><figcaption>Ferienapartment am Abend</figcaption></figure>
+            <figure class="slide"><img data-src="img/aussen/fewo.jpg" alt="Fewo Mainau" loading="lazy" decoding="async"><figcaption>Willkommen</figcaption></figure>
             <button class="carousel-btn prev" type="button" aria-label="Vorheriges Bild" data-prev>&lsaquo;</button>
             <button class="carousel-btn next" type="button" aria-label="Nächstes Bild" data-next>&rsaquo;</button>
             <button class="zoom-btn" type="button" data-open-gallery>Vergrößern</button>
@@ -235,32 +240,49 @@
               <div class="details-grid">
                 <div><h4>Aufteilung</h4><ul><li>Wohnraum, Küche, Essbereich mit offenem Grundriss</li><li>Badezimmer</li><li>Schlafgalerie über eine Wendeltreppe</li><li>Sonnige Dachterrasse/Loggia mit Gartenmöbeln und Sonnenschirm</li></ul></div>
                 <div><h4>Ausstattung</h4><ul><li>Schlafsofa, Sessel, Kleiderschrank und Bücherauswahl</li><li>Einbauküche mit Herd, Backofen, Dunstabzug, Spülmaschine und Kühlschrank</li><li>2 Einzelbetten, Bettwäsche, Handtücher, TV, Stereoanlage und W-LAN</li></ul></div>
-                <div><h4>Besonderheiten</h4><ul><li>Sehr ruhige Lage direkt an Mainwiesen und Flussufer</li><li>Mainradweg vor der Tür, Mainfähre ca. 100 m entfernt</li><li>keine Haustiere, Nichtraucherwohnung</li><li><button type="button" class="link-button" data-open-modal="parking-modal">Parken an der Ferienwohnung</button></li></ul></div>
+                <div><h4>Besonderheiten</h4><ul><li>Sehr ruhige Lage direkt an Mainwiesen und Flussufer</li><li>Mainradweg vor der Tür, Mainfähre ca. 100 m entfernt</li><li>Sicherer Abstellplatz für Fahrräder</li><li>keine Haustiere, Nichtraucherwohnung</li><li><button type="button" class="link-button" data-open-modal="parking-modal">Parken an der Ferienwohnung</button></li></ul></div>
               </div>
             </details>
             <details class="calendar-details">
               <summary>Belegungskalender</summary>
-              <img class="calendar-label" src="img/belegung.png" width="283" height="26" alt="Belegungskalender Apartment">
+              <img class="calendar-label" src="img/belegung.png" width="283" height="26" alt="Belegungskalender Apartment" loading="lazy" decoding="async">
               <div class="embed"><iframe width="700" height="800" loading="lazy" src="calendar/?id_item=4" title="Belegungskalender Apartment" frameborder="0" style="background: #fff;"></iframe></div>
               <p class="small">Ihr Wunschtermin schon belegt? Wir empfehlen die <a href="https://www.ferienwohnungvolkach.de" target="_blank" rel="noopener">Fewo der Familie Rapp in Obervolkach</a>.</p>
+            </details>
+            <details>
+              <summary>Zahlungs- & Stornierungsbedingungen</summary>
+              <div class="details-grid">
+                <div><p><strong>Bezahlung:</strong></p>
+                <ul>
+                  <li>Anzahlung: 50 % des Mietpreises per Banküberweisung nach Erhalt der Buchungsbestätigung.</li>
+                  <li>Restbetrag: Kurz vor Anreise ebenfalls per Überweisung oder in bar bei der Ankunft.</li>
+                </ul>
+                <p><strong>Stornierung:</strong></p>
+                <ul>
+                  <li>Bis 4 Wochen vor Anreise: Kostenfreie Stornierung. Sie erhalten Ihre Anzahlung vollständig zurück.</li>
+                  <li>Unter 4 Wochen vor Anreise: Die Anzahlung wird als Stornogebühr einbehalten.</li>
+                  <li>Unser Fairness-Versprechen: Wir bemühen uns sofort um eine Weitervermietung. Finden wir für den Zeitraum Ersatzmieter, erstatten wir Ihnen die Anzahlung für die neu vermieteten Tage taggenau zurück.</li>
+                </ul>
+                <p><em>Tipp: Um sich gegen unerwartete Ereignisse abzusichern, empfehlen wir den Abschluss einer Reiserücktrittsversicherung.</em></p></div>
+              </div>
             </details>
           </div>
         </article>
 
         <article class="apartment">
           <div class="gallery-panel" data-carousel>
-            <figure class="slide is-active"><img src="img/fewo-3/wohnen.jpg" alt="Wohnbereich Mainufer"><figcaption>Wohnbereich</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/balkon.jpg" alt="Südbalkon"><figcaption>Südbalkon</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/essen.jpg" alt="Essbereich"><figcaption>Essplatz für 4</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/kochecke.jpg" alt="Kochbereich"><figcaption>alles drin in der Küche</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/schlafen.jpg" alt="Schlafzimmer"><figcaption>Schlafzimmer</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/schlafen-2.jpg" alt="Schlafraum"><figcaption>nochmal Schlafzimmer</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/badezimmer.jpg" alt="Badezimmer"><figcaption>Badezimmer</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/flur-2.jpg" alt="Korridor"><figcaption>Korridor</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/suedbalkon.jpg" alt="Balkon"><figcaption>Südbalkon</figcaption></figure>
-            <figure class="slide"><img src="img/aussen/parkplatz.jpg" alt="KFZ-Stellplatz"><figcaption>Stellplatz der Ferienwohnung</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/stellplatz.jpg" alt="Gästeparkplatz"><figcaption>der Gästeparkplatz</figcaption></figure>
-            <figure class="slide"><img src="img/fewo-3/fahrradgarage.jpg" alt="Fahrradgarage"><figcaption>Fahrradgarage</figcaption></figure>
+            <figure class="slide is-active"><img src="img/fewo-3/wohnen.jpg" alt="Wohnbereich Mainufer" loading="lazy" decoding="async"><figcaption>Wohnbereich</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/balkon.jpg" alt="Südbalkon" loading="lazy" decoding="async"><figcaption>Südbalkon</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/essen.jpg" alt="Essbereich" loading="lazy" decoding="async"><figcaption>Essplatz für 4</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/kochecke.jpg" alt="Kochbereich" loading="lazy" decoding="async"><figcaption>alles drin in der Küche</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/schlafen.jpg" alt="Schlafzimmer" loading="lazy" decoding="async"><figcaption>Schlafzimmer</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/schlafen-2.jpg" alt="Schlafraum" loading="lazy" decoding="async"><figcaption>nochmal Schlafzimmer</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/badezimmer.jpg" alt="Badezimmer" loading="lazy" decoding="async"><figcaption>Badezimmer</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/flur-2.jpg" alt="Korridor" loading="lazy" decoding="async"><figcaption>Korridor</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/suedbalkon.jpg" alt="Balkon" loading="lazy" decoding="async"><figcaption>Südbalkon</figcaption></figure>
+            <figure class="slide"><img data-src="img/aussen/parkplatz.jpg" alt="KFZ-Stellplatz" loading="lazy" decoding="async"><figcaption>Stellplatz der Ferienwohnung</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/stellplatz.jpg" alt="Gästeparkplatz" loading="lazy" decoding="async"><figcaption>der Gästeparkplatz</figcaption></figure>
+            <figure class="slide"><img data-src="img/fewo-3/fahrradgarage.jpg" alt="Fahrradgarage" loading="lazy" decoding="async"><figcaption>Fahrradgarage</figcaption></figure>
             <button class="carousel-btn prev" type="button" aria-label="Vorheriges Bild" data-prev>&lsaquo;</button>
             <button class="carousel-btn next" type="button" aria-label="Nächstes Bild" data-next>&rsaquo;</button>
             <button class="zoom-btn" type="button" data-open-gallery>Vergrößern</button>
@@ -287,9 +309,26 @@
             </details>
             <details class="calendar-details">
               <summary>Belegungskalender</summary>
-              <img class="calendar-label" src="img/belegung.png" width="283" height="26" alt="Belegungskalender Ferienwohnung">
+              <img class="calendar-label" src="img/belegung.png" width="283" height="26" alt="Belegungskalender Ferienwohnung" loading="lazy" decoding="async">
               <div class="embed"><iframe width="700" height="800" loading="lazy" src="calendar/?id_item=6" title="Belegungskalender Ferienwohnung" frameborder="0" style="background: #fff;"></iframe></div>
               <p class="small">Ihr Wunschtermin schon belegt? Wir empfehlen das <a href="http://ferienhaus-mainfranken.de" target="_blank" rel="noopener">Ferienhaus Destillerie Bimbach 24</a>.</p>
+            </details>
+            <details>
+              <summary>Zahlungs- & Stornierungsbedingungen</summary>
+              <div class="details-grid">
+                <div><p><strong>Bezahlung:</strong></p>
+                <ul>
+                  <li>Anzahlung: 50 % des Mietpreises per Banküberweisung nach Erhalt der Buchungsbestätigung.</li>
+                  <li>Restbetrag: Kurz vor Anreise ebenfalls per Überweisung oder in bar bei der Ankunft.</li>
+                </ul>
+                <p><strong>Stornierung:</strong></p>
+                <ul>
+                  <li>Bis 4 Wochen vor Anreise: Kostenfreie Stornierung. Sie erhalten Ihre Anzahlung vollständig zurück.</li>
+                  <li>Unter 4 Wochen vor Anreise: Die Anzahlung wird als Stornogebühr einbehalten.</li>
+                  <li>Unser Fairness-Versprechen: Wir bemühen uns sofort um eine Weitervermietung. Finden wir für den Zeitraum Ersatzmieter, erstatten wir Ihnen die Anzahlung für die neu vermieteten Tage taggenau zurück.</li>
+                </ul>
+                <p><em>Tipp: Um sich gegen unerwartete Ereignisse abzusichern, empfehlen wir den Abschluss einer Reiserücktrittsversicherung.</em></p></div>
+              </div>
             </details>
           </div>
         </article>
@@ -387,6 +426,23 @@
       </div>
     </section>
 
+    <section id="radfahren" class="section split-section">
+      <div class="wrap two-col">
+        <div>
+          <p class="eyebrow">unterwegs</p>
+          <h3 class="section-title">Radeln entlang der Mainschleife</h3>
+          <p class="lead">Direkt am Mainradweg – ideal für entspannte Tagesetappen, Rundtouren und kleine Ausflüge.</p>
+          <ul class="clean-list">
+            <li>Direkt vor der Ferienwohnung beginnt der Mainradweg für gemütliche Radtouren entlang des Flusses.</li>
+            <li>Perfekt für Tagesausflüge nach Volkach, die Vogelsburg, die Winzerdörfer Nordheim und Sommerach oder entlang der Mainschleife.</li>
+            <li>In der Ferienwohnung warten eine Fahrradgarage beziehungsweise ein sicherer Stellplatz auf Ihren Bike-Urlaub.</li>
+            <li>Nach dem Radeln lohnt sich ein Abstecher ans Mainufer und den Badesee oder Sie genießen entspannt den Ausblick von Ihrem Balkon.</li>
+          </ul>
+        </div>
+        <img src="img/aktiv/fewo-volkach-radfahren-main.jpg" title="Radfahren entlang der Mainschleife" alt="Radfahren an der Mainschleife nahe der Ferienwohnung in Volkach am Main" style="width: 100%; height: auto; display: block; border-radius: 1rem;" loading="lazy" decoding="async">
+      </div>
+    </section>
+
     <section id="galerie" class="banner banner-galerie">
       <div class="wrap">
         <p class="eyebrow">Eindrücke</p>
@@ -398,7 +454,7 @@
       <div class="wrap gallery-cards">
         <article>
           <button type="button" data-open-template="fahr-gallery">
-            <img src="img/rast-an-faehre.webp" alt="Fahr am Main">
+            <img src="img/rast-an-faehre.webp" alt="Fahr am Main" loading="lazy" decoding="async">
           </button>
           <div class="gallery-card-text">
             <h3>Fahr am Main</h3>
@@ -408,7 +464,7 @@
         </article>
         <article>
           <button type="button" data-open-template="volkach-gallery">
-            <img src="img/volkach-rathaus.webp" alt="Marktplatz Volkach">
+            <img src="img/volkach-rathaus.webp" alt="Marktplatz Volkach" loading="lazy" decoding="async">
           </button>
           <div class="gallery-card-text">
             <h3>Volkach</h3>
@@ -418,7 +474,7 @@
         </article>
         <article>
           <button type="button" data-open-template="expect-gallery">
-            <img src="img/erwartung.webp" alt="Erlebnis Mainschleife">
+            <img src="img/erwartung.webp" alt="Erlebnis Mainschleife" loading="lazy" decoding="async">
           </button>
           <div class="gallery-card-text">
             <h3>Was Sie erwartet</h3>
@@ -450,7 +506,7 @@
       </div>
       <div>
         <h3>Sitemap</h3>
-        <p><button type="button" class="link-button" data-open-modal="legal-modal">Impressum & Datenschutz</button><br><a href="#auswahl">Wohnungswahl</a><br><a href="#buchung">Buchungsanfrage</a><br><a href="#galerie">Galerien</a></p>
+        <p><button type="button" class="link-button" data-open-modal="legal-modal">Impressum & Datenschutz</button><br><a href="#auswahl">Wohnungswahl</a><br><a href="#buchung">Buchungsanfrage</a><br><a href="#radfahren">Radfahren</a><br><a href="#galerie">Galerien</a></p>
       </div>
       <div>
         <h3>Links</h3>
@@ -490,7 +546,7 @@
 
   <dialog id="parking-modal" class="modal image-modal">
     <button type="button" class="modal-close" data-close-modal aria-label="Schließen">&times;</button>
-    <img src="img/parken.webp" alt="Parken an der Ferienwohnung">
+    <img src="img/parken.webp" alt="Parken an der Ferienwohnung" loading="lazy" decoding="async">
   </dialog>
 
   <dialog id="gallery-modal" class="modal gallery-modal" aria-label="Bildergalerie">
@@ -499,64 +555,64 @@
   </dialog>
 
   <template id="fahr-gallery">
-    <figure class="slide is-active"><img src="img/fahr/bank-faehre.jpg" alt="ankommen in Fahr"><figcaption>ankommen in Fahr</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/fahr.jpg" alt="Fahr von oben"><figcaption>Fahr von oben</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/faehre.jpg" alt="über den Main"><figcaption>über den Main</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/dorfstrasse.jpg" alt="die Dorfstraße entlang"><figcaption>die Dorfstraße entlang</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/heiligenfigur.jpg" alt="Sachen des Glaubens"><figcaption>Sachen des Glaubens</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/torschluss.jpg" alt="fast allem gewachsen"><figcaption>fast allem gewachsen</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/dorfrand.jpg" alt="allem gewachsen"><figcaption>allem gewachsen</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/loewentanz.jpg" alt="Wolkenkratzer"><figcaption>Wolkenkratzer</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/mainufer.jpg" alt="alles im Fluss"><figcaption>alles im Fluss</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/badesee.jpg" alt="Ruhe am Strand"><figcaption>Ruhe am Strand</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/elgersheim.jpg" alt="Spiegelbild"><figcaption>Spiegelbild</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/mariaimweingarten.jpg" alt="auf dem Weg"><figcaption>auf dem Weg</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/weinlese.jpg" alt="die Ernte einholen"><figcaption>die Ernte einholen</figcaption></figure>
-    <figure class="slide"><img src="img/apart/haengematte.jpg" alt="auf der Sonnenseite"><figcaption>auf der Sonnenseite</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/gegenlicht.jpg" alt="im Licht betrachtet"><figcaption>im Licht betrachtet</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/mainfront.jpg" alt="zu vorgerückter Stunde"><figcaption>zu vorgerückter Stunde</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/mainfaehre-1.jpg" alt="ein Tag geht zur Neige"><figcaption>ein Tag geht zur Neige</figcaption></figure>
-    <figure class="slide"><img src="img/fahr/faehrenfest.jpg" alt="Faehrenfest"><figcaption>Faehrenfest</figcaption></figure>
+    <figure class="slide is-active"><img src="img/fahr/bank-faehre.jpg" alt="ankommen in Fahr" loading="lazy" decoding="async"><figcaption>ankommen in Fahr</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/fahr.jpg" alt="Fahr von oben" loading="lazy" decoding="async"><figcaption>Fahr von oben</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/faehre.jpg" alt="über den Main" loading="lazy" decoding="async"><figcaption>über den Main</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/dorfstrasse.jpg" alt="die Dorfstraße entlang" loading="lazy" decoding="async"><figcaption>die Dorfstraße entlang</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/heiligenfigur.jpg" alt="Sachen des Glaubens" loading="lazy" decoding="async"><figcaption>Sachen des Glaubens</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/torschluss.jpg" alt="fast allem gewachsen" loading="lazy" decoding="async"><figcaption>fast allem gewachsen</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/dorfrand.jpg" alt="allem gewachsen" loading="lazy" decoding="async"><figcaption>allem gewachsen</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/loewentanz.jpg" alt="Wolkenkratzer" loading="lazy" decoding="async"><figcaption>Wolkenkratzer</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/mainufer.jpg" alt="alles im Fluss" loading="lazy" decoding="async"><figcaption>alles im Fluss</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/badesee.jpg" alt="Ruhe am Strand" loading="lazy" decoding="async"><figcaption>Ruhe am Strand</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/elgersheim.jpg" alt="Spiegelbild" loading="lazy" decoding="async"><figcaption>Spiegelbild</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/mariaimweingarten.jpg" alt="auf dem Weg" loading="lazy" decoding="async"><figcaption>auf dem Weg</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/weinlese.jpg" alt="die Ernte einholen" loading="lazy" decoding="async"><figcaption>die Ernte einholen</figcaption></figure>
+    <figure class="slide"><img data-src="img/apart/haengematte.jpg" alt="auf der Sonnenseite" loading="lazy" decoding="async"><figcaption>auf der Sonnenseite</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/gegenlicht.jpg" alt="im Licht betrachtet" loading="lazy" decoding="async"><figcaption>im Licht betrachtet</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/mainfront.jpg" alt="zu vorgerückter Stunde" loading="lazy" decoding="async"><figcaption>zu vorgerückter Stunde</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/mainfaehre-1.jpg" alt="ein Tag geht zur Neige" loading="lazy" decoding="async"><figcaption>ein Tag geht zur Neige</figcaption></figure>
+    <figure class="slide"><img data-src="img/fahr/faehrenfest.jpg" alt="Faehrenfest" loading="lazy" decoding="async"><figcaption>Faehrenfest</figcaption></figure>
   </template>
 
   <template id="volkach-gallery">
-    <figure class="slide is-active"><img src="img/volkach/marktplatz-2.jpg" alt="Volkach"><figcaption>Volkach</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/brunnenschoppen.jpg" alt="am Marktbrunnen"><figcaption>am Marktbrunnen</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/hauptstrasse.jpg" alt="die Flaniermeile"><figcaption>die Flaniermeile</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/abendschoppen.jpg" alt="Schoppentreff"><figcaption>Schoppentreff</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/marktplatz-nacht.jpg" alt="blaue Stunde"><figcaption>blaue Stunde</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/wirtshaus.jpg" alt="Sommerabend"><figcaption>Sommerabend</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/kreuzfahrt.jpg" alt="Wasserstrasse"><figcaption>Wasserstrasse</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/volkach-am-main.jpg" alt="Volkach am Main"><figcaption>Volkach am Main</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/kapelle-im-weingarten.jpg" alt="Maria im Weingarten"><figcaption>Maria im Weingarten</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/kapelle.jpg" alt="Madonna im Rosenkranz"><figcaption>Madonna im Rosenkranz</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/troedelmarkt.jpg" alt="Trödelmarkt"><figcaption>Trödelmarkt</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/weinfest-1.jpg" alt="Fränkisches Weinfest"><figcaption>Fränkisches Weinfest</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/weinfest-4.jpg" alt="Weinfest Party"><figcaption>Weinfest Party</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/vogelsburg.jpg" alt="Vogelsburg"><figcaption>Vogelsburg</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/biergarten.jpg" alt="Biergarten"><figcaption>Biergarten</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/bahn.jpg" alt="Mainschleifenbahn"><figcaption>Mainschleifenbahn</figcaption></figure>
-    <figure class="slide"><img src="img/volkach/gleitschirm.jpg" alt="Anflug auf Volkach"><figcaption>Anflug auf Volkach</figcaption></figure>
+    <figure class="slide is-active"><img src="img/volkach/marktplatz-2.jpg" alt="Volkach" loading="lazy" decoding="async"><figcaption>Volkach</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/brunnenschoppen.jpg" alt="am Marktbrunnen" loading="lazy" decoding="async"><figcaption>am Marktbrunnen</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/hauptstrasse.jpg" alt="die Flaniermeile" loading="lazy" decoding="async"><figcaption>die Flaniermeile</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/abendschoppen.jpg" alt="Schoppentreff" loading="lazy" decoding="async"><figcaption>Schoppentreff</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/marktplatz-nacht.jpg" alt="blaue Stunde" loading="lazy" decoding="async"><figcaption>blaue Stunde</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/wirtshaus.jpg" alt="Sommerabend" loading="lazy" decoding="async"><figcaption>Sommerabend</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/kreuzfahrt.jpg" alt="Wasserstrasse" loading="lazy" decoding="async"><figcaption>Wasserstrasse</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/volkach-am-main.jpg" alt="Volkach am Main" loading="lazy" decoding="async"><figcaption>Volkach am Main</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/kapelle-im-weingarten.jpg" alt="Maria im Weingarten" loading="lazy" decoding="async"><figcaption>Maria im Weingarten</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/kapelle.jpg" alt="Madonna im Rosenkranz" loading="lazy" decoding="async"><figcaption>Madonna im Rosenkranz</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/troedelmarkt.jpg" alt="Trödelmarkt" loading="lazy" decoding="async"><figcaption>Trödelmarkt</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/weinfest-1.jpg" alt="Fränkisches Weinfest" loading="lazy" decoding="async"><figcaption>Fränkisches Weinfest</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/weinfest-4.jpg" alt="Weinfest Party" loading="lazy" decoding="async"><figcaption>Weinfest Party</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/vogelsburg.jpg" alt="Vogelsburg" loading="lazy" decoding="async"><figcaption>Vogelsburg</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/biergarten.jpg" alt="Biergarten" loading="lazy" decoding="async"><figcaption>Biergarten</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/bahn.jpg" alt="Mainschleifenbahn" loading="lazy" decoding="async"><figcaption>Mainschleifenbahn</figcaption></figure>
+    <figure class="slide"><img data-src="img/volkach/gleitschirm.jpg" alt="Anflug auf Volkach" loading="lazy" decoding="async"><figcaption>Anflug auf Volkach</figcaption></figure>
   </template>
 
   <template id="expect-gallery">
-    <figure class="slide is-active"><img src="img/aussen/Main-Schiff.jpg" alt="per Schiff vorbei an der Ferienwohnung"><figcaption>per Schiff vorbei an der Ferienwohnung</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/taubenschwaenzchen.jpg" alt="Taubenschwänzchen"><figcaption>Fluggast an der Fewo</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/rafting.jpg" alt="Rafting"><figcaption>Ausflug per Boot</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/mainstrand.jpg" alt="an den Ufern des Mains"><figcaption>mit Zwischenstopp</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/standup.jpg" alt="auf dem Main"><figcaption>alles im Fluss</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/rastplatz.jpg" alt="Ausblick"><figcaption>Rast mit Ausblick</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/elgersheimer-see.jpg" alt="Elgersheimer See"><figcaption>Idylle unterwegs</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/sonnenbad.jpg" alt="Sonnenwiese"><figcaption>in sonniger Lage</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/volkach-fern.jpg" alt="Weinberge vor Volkach"><figcaption>Weg nach Volkach</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/wandern.jpg" alt="Wandern um Fahr"><figcaption>per pedes</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/weinberg-treppe.jpg" alt="Weinberg"><figcaption>durch die Weinberge</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/velo.jpg" alt="Mainradweg"><figcaption>per Velo auf dem Mainradweg</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/kaltenhausen.jpg" alt="Kaltenhausen"><figcaption>Zwischenstopp</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/ballonfahrt.jpg" alt="Heißluftballon"><figcaption>per Luftfahrt</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/Vespa-Faehre.jpg" alt="Vespa am Main"><figcaption>stiller Moment</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/gaststaette.jpg" alt="Gaststätte"><figcaption>Feierabend</figcaption></figure>
-    <figure class="slide"><img src="img/erwartung/briefkasten.jpg" alt="Erinnerung"><figcaption>Was bleibt</figcaption></figure>
+    <figure class="slide is-active"><img src="img/aussen/Main-Schiff.jpg" alt="per Schiff vorbei an der Ferienwohnung" loading="lazy" decoding="async"><figcaption>per Schiff vorbei an der Ferienwohnung</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/taubenschwaenzchen.jpg" alt="Taubenschwänzchen" loading="lazy" decoding="async"><figcaption>Fluggast an der Fewo</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/rafting.jpg" alt="Rafting" loading="lazy" decoding="async"><figcaption>Ausflug per Boot</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/mainstrand.jpg" alt="an den Ufern des Mains" loading="lazy" decoding="async"><figcaption>mit Zwischenstopp</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/standup.jpg" alt="auf dem Main" loading="lazy" decoding="async"><figcaption>alles im Fluss</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/rastplatz.jpg" alt="Ausblick" loading="lazy" decoding="async"><figcaption>Rast mit Ausblick</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/elgersheimer-see.jpg" alt="Elgersheimer See" loading="lazy" decoding="async"><figcaption>Idylle unterwegs</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/sonnenbad.jpg" alt="Sonnenwiese" loading="lazy" decoding="async"><figcaption>in sonniger Lage</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/volkach-fern.jpg" alt="Weinberge vor Volkach" loading="lazy" decoding="async"><figcaption>Weg nach Volkach</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/wandern.jpg" alt="Wandern um Fahr" loading="lazy" decoding="async"><figcaption>per pedes</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/weinberg-treppe.jpg" alt="Weinberg" loading="lazy" decoding="async"><figcaption>durch die Weinberge</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/velo.jpg" alt="Mainradweg" loading="lazy" decoding="async"><figcaption>per Velo auf dem Mainradweg</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/kaltenhausen.jpg" alt="Kaltenhausen" loading="lazy" decoding="async"><figcaption>Zwischenstopp</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/ballonfahrt.jpg" alt="Heißluftballon" loading="lazy" decoding="async"><figcaption>per Luftfahrt</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/Vespa-Faehre.jpg" alt="Vespa am Main" loading="lazy" decoding="async"><figcaption>stiller Moment</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/gaststaette.jpg" alt="Gaststätte" loading="lazy" decoding="async"><figcaption>Feierabend</figcaption></figure>
+    <figure class="slide"><img data-src="img/erwartung/briefkasten.jpg" alt="Erinnerung" loading="lazy" decoding="async"><figcaption>Was bleibt</figcaption></figure>
   </template>
 
   <script src="js/main.js" defer></script>

@@ -7,7 +7,7 @@ Dieses Repository enthaelt die Webseite fuer die Ferienwohnungen/Fewo Mainau in 
 Ziel ist eine wartbare Version der urspruenglich aus einer komplexen Vorlage entstandenen Webseite. Besucher sollen weiterhin dieselben Inhalte und Funktionen erhalten:
 
 - Startbereich mit Bildwechsel, Logo und transparenter Navigation beim Seitenanfang
-- Inhaltsbereiche zu Urlaub, Wohnungswahl, Preisen, Buchungsanfrage, Galerien und Kontakt
+- Inhaltsbereiche zu Urlaub, Wohnungswahl, Preisen, Buchungsanfrage, Radfahren, Galerien und Kontakt
 - Bildgalerien/Slider ohne alte Template-Bibliotheken
 - Anfrageformular mit bestehendem `formmail.php`
 - Belegungskalender ueber bestehende `/calendar/`-Iframes
@@ -62,7 +62,7 @@ Nach `671bada` wurden weitere Layout-, Navigations- und Formular-Korrekturen an 
 - Die aktive Navigation nutzt einen gemeinsamen Scroll-Offset (`--nav-scroll-offset`) und eine robustere Viewport-Erkennung in `js/main.js`, damit Anker wie `Wohnungswahl` und `Preise` mit der Linkfarbe zusammenpassen.
 - Der Preis-Navigationslink springt gezielt auf `#preise-details` an der Preisueberschrift, sodass `Wohnungswahl` nicht zu frueh von `Preise` abgeloest wird.
 - Der schwarze Balken unter dem Welcome-Slider wurde adressiert, indem `hero-slider`, `.hero .slide` und `.hero figcaption` dieselbe Hoehe erhalten.
-- Die Hoehe des Eingangs-Hero-Sliders wurde wieder an die archivierte Vorlage angeglichen: 750px regulaer und 350px auf sehr kleinen Bildschirmen bis 480px.
+- Der Eingangs-Hero-Slider ist bis 960px Bildschirmbreite stufenlos zwischen 350px und 750px hoch. Das mobile Menue bleibt auch bei geringer Bildschirmhoehe scrollbar.
 - Der zwischenzeitlich vereinfachte Buchungszeitraum mit zwei nativen Datumsfeldern wurde wieder durch ein einzelnes Textfeld `name="Buchungszeitraum:"` mit eigenem Range-Datepicker ersetzt. Der Datepicker ist direkt in `js/main.js` und `css/main.css` umgesetzt und nutzt keine externen Lightpick-/Moment-Dateien.
 - Alle Slider nutzen jetzt Fade-Uebergaenge statt harter Bildwechsel. Die gemeinsame Carousel-Komponente in `js/main.js` erzeugt fuer jeden Slider Bullet-Navigation am unteren Rand; aktive Slides werden farblich markiert und Bullet-Klicks springen direkt zum jeweiligen Bild.
 - Die weissen Vor-/Zurueck-Pfeile der Galerien wurden zentral ueber `.carousel-btn` vergroessert.
@@ -71,13 +71,25 @@ Nach `671bada` wurden weitere Layout-, Navigations- und Formular-Korrekturen an 
 - Ueberschriften wurden dort, wo es fuer die Dokumentstruktur sinnvoll war, von rein optischen `h2`-Elementen auf Klassen wie `.section-title` und `.apartment-title` umgestellt.
 - Das strukturierte `LodgingBusiness`-Markup wurde erweitert: Beschreibung, Bilder, Logo, Adresse mit Region, Geo-Koordinaten, Preisrahmen, Ausstattungsmerkmale sowie `hasMap`/`sameAs` zum Google-Business-/Maps-Profil.
 - Im Kontaktbereich ist das Google-Profil sichtbar verlinkt. Zusaetzlich wurde ein Google-Bewertungslink im Kontaktbereich und im Erfolgsdialog der Anfrage eingebaut, ohne kuenstliche Bewertungs-/Sterne-Markups zu setzen.
+- Ein Abschnitt zum Radfahren am Mainradweg wurde mit passendem Foto und Navigationslink ergaenzt.
 
 Betroffene aktive Dateien:
 
 - `index.html`
 - `css/main.css`
 - `js/main.js`
+- `links.html`
 - `README.md`
+- sechs neue WebP-Varianten der drei Titelbilder in `img/`
+- `img/aktiv/fewo-volkach-radfahren-main.jpg`
+
+## Responsive Bilder und Galerien
+
+- Die drei Titelbilder besitzen Varianten mit 800px und 1200px Breite. Die 1900px-Originale bleiben als groesste Variante erhalten. `srcset` und `sizes` in `index.html` lassen den Browser die passende Datei auswaehlen.
+- Der Preload des ersten Titelbildes verwendet dieselbe `imagesrcset`-/`imagesizes`-Auswahl. Bei Aenderungen an diesem Bild muessen Preload und `img`-Tag zusammen angepasst werden.
+- Bilder unterhalb des Startbereichs verwenden `loading="lazy"`. Verdeckte Galerie-Slides tragen `data-src`; `js/main.js` setzt `src` erst beim Anzeigen des Bildes.
+- Die automatische Wiedergabe der Slider pausiert, solange der Slider ausserhalb des sichtbaren Bereichs liegt. Beim Wiedereintritt wird sie fortgesetzt.
+- Beim Austausch eines Titelbildes die 800px- und 1200px-WebP-Dateien erneut aus dem neuen Original erzeugen und alle drei Dateinamen in `srcset` sowie beim ersten Bild im Preload pruefen.
 
 ## Bekannte Pruefungen und Einschraenkungen
 
@@ -90,16 +102,16 @@ Bereits geprueft:
   - `img/volkach-rathausplatz.webp`
   - `img/logo.png`
 - JS-Syntax wurde mit `node --check js/main.js` geprueft.
-- Ein lokaler Lighthouse-Test gegen `http://127.0.0.1:4173/index.html` wurde mit Chrome Headless ausgefuehrt:
+- Ein frueherer lokaler Lighthouse-Test gegen `http://127.0.0.1:4173/index.html` wurde vor der aktuellen Bildoptimierung mit Chrome Headless ausgefuehrt:
   - Mobile Performance: 62
   - Desktop Performance: 81
-  - Hauptbremse ist Ladegewicht/LCP, vor allem grosse Bilder und Fonts.
+  - Damals war Ladegewicht/LCP die Hauptbremse, vor allem grosse Bilder und Fonts. Die Werte beschreiben nicht den aktuellen Stand.
   - Total Blocking Time und CLS waren unauffaellig.
 
 Nicht vollstaendig geprueft:
 
 - PHP-Livefunktion, weil in der lokalen Umgebung kein PHP verfuegbar war.
-- Echte Browserdarstellung nach den letzten Layout-Fixes muss noch visuell geprueft werden.
+- Echte Browserdarstellung nach den letzten Layout- und Bildaenderungen muss noch visuell geprueft werden. Ein neuer Lighthouse-Lauf liegt noch nicht vor.
 
 ## Weiterarbeit in einem neuen Chat
 
@@ -116,12 +128,8 @@ Wenn in einem neuen Chat weitergemacht wird:
 
 ## Noch sinnvolle naechste Schritte
 
-- Aktuelle Layout-Fixes im Browser auf Desktop und Mobile visuell pruefen.
-- Performance optimieren:
-  - Hero-Bild priorisieren/preloaden.
-  - Nicht sichtbare Galerie-/Carouselbilder lazy laden.
-  - Grosse Bilder weiter komprimieren und responsive Varianten ergaenzen.
-  - Fonts als kleinere/subset `woff2`-Dateien ausliefern.
-- Optional: `.gitattributes` ergaenzen, um Zeilenendungen stabiler zu halten.
-- Optional: Linkcheck fuer lokale Assets automatisieren.
-- Optional: Falls PHP verfuegbar ist, Anfrageformular und Kalender lokal oder auf Staging testen.
+- Die aktuelle Seite auf Desktop und Mobilgeraeten visuell pruefen, besonders Titelbereich, Navigation, Galerien und Buchungsformular.
+- Lighthouse fuer den aktuellen Stand erneut ausfuehren und Bildtransfers im Netzwerk-Tab bei verschiedenen Displaybreiten pruefen.
+- Optional: Bannerbilder und Fonts weiter optimieren; die Schriften koennten als kleinere WOFF2-Subsets ausgeliefert werden.
+- Optional: `.gitattributes` fuer stabile Zeilenendungen und einen Linkcheck fuer lokale Assets ergaenzen.
+- Falls PHP verfuegbar ist, Anfrageformular und Kalender lokal oder auf Staging testen.

@@ -1,5 +1,7 @@
 ﻿(function () {
   const initCarousel = (root) => {
+    root._carouselObserver?.disconnect();
+    root._carouselObserver = null;
     if (root._carouselTimer) {
       window.clearInterval(root._carouselTimer);
       root._carouselTimer = null;
@@ -7,6 +9,13 @@
 
     const slides = Array.from(root.querySelectorAll(':scope > .slide'));
     if (!slides.length) return;
+
+    const loadSlide = (slide) => {
+      slide.querySelectorAll('img[data-src]').forEach((img) => {
+        img.src = img.dataset.src;
+        delete img.dataset.src;
+      });
+    };
 
     root.querySelector(':scope > .carousel-bullets')?.remove();
 
@@ -30,6 +39,7 @@
 
     const show = (nextIndex) => {
       index = (nextIndex + slides.length) % slides.length;
+      loadSlide(slides[index]);
       slides.forEach((slide, slideIndex) => {
         const isActive = slideIndex === index;
         slide.classList.toggle('is-active', isActive);
@@ -42,8 +52,9 @@
       });
     };
 
+    let isVisible = !('IntersectionObserver' in window);
     const restartAutoplay = () => {
-      if (root.dataset.autoplay === 'false') return;
+      if (root.dataset.autoplay === 'false' || !isVisible) return;
       if (root._carouselTimer) window.clearInterval(root._carouselTimer);
       root._carouselTimer = window.setInterval(() => show(index + 1), 6500);
     };
@@ -63,8 +74,18 @@
 
     show(index);
 
-    if (root.dataset.autoplay !== 'false') {
-      root._carouselTimer = window.setInterval(() => show(index + 1), 6500);
+    if ('IntersectionObserver' in window) {
+      root._carouselObserver = new IntersectionObserver(([entry]) => {
+        isVisible = entry.isIntersecting;
+        if (isVisible) restartAutoplay();
+        else if (root._carouselTimer) {
+          window.clearInterval(root._carouselTimer);
+          root._carouselTimer = null;
+        }
+      });
+      root._carouselObserver.observe(root);
+    } else {
+      restartAutoplay();
     }
   };
 
@@ -90,18 +111,25 @@
     const cssOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--nav-scroll-offset'));
     return Number.isFinite(cssOffset) ? cssOffset : 92;
   };
+
+  const getSectionOffset = (section) => {
+    const computedOffset = parseFloat(getComputedStyle(section).scrollMarginTop);
+    return Number.isFinite(computedOffset) ? computedOffset : getNavOffset();
+  };
+
   const updateActiveNav = () => {
-    const activationLine = getNavOffset() + 1;
     let activeItem = navItems[0];
 
     navItems.forEach((item) => {
-      if (item.section.getBoundingClientRect().top <= activationLine) activeItem = item;
+      const sectionOffset = getSectionOffset(item.section);
+      if (item.section.getBoundingClientRect().top <= sectionOffset + 1) activeItem = item;
     });
 
     const hashItem = navItems.find((item) => item.link.hash === window.location.hash);
     if (hashItem) {
       const rect = hashItem.section.getBoundingClientRect();
-      if (rect.top <= activationLine && rect.bottom > activationLine) activeItem = hashItem;
+      const sectionOffset = getSectionOffset(hashItem.section);
+      if (rect.top <= sectionOffset + 1 && rect.bottom > sectionOffset + 1) activeItem = hashItem;
     }
 
     navItems.forEach((item) => {
@@ -170,6 +198,14 @@
     if (close) {
       closeModal(close.closest('dialog'));
     }
+  });
+
+  document.addEventListener('click', (event) => {
+    document.querySelectorAll('details[open]').forEach((details) => {
+      if (!details.contains(event.target)) {
+        details.removeAttribute('open');
+      }
+    });
   });
 
   document.querySelectorAll('dialog').forEach((dialog) => {

@@ -370,6 +370,10 @@ h4 {
   scroll-margin-top: var(--nav-scroll-offset);
 }
 
+#radfahren {
+  scroll-margin-top: calc(var(--nav-scroll-offset) + 50px);
+}
+
 .narrow {
   max-width: 860px;
 }
@@ -1256,7 +1260,7 @@ textarea {
   height: 72px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   :root {
     --nav-scroll-offset: 64px;
   }
@@ -1286,6 +1290,9 @@ textarea {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    max-height: calc(100vh - var(--header-height));
+    max-height: calc(100dvh - var(--header-height));
+    overflow-y: auto;
     padding: 12px 24px 24px;
     background: #fff;
     border-bottom: 1px solid var(--line);
@@ -1297,6 +1304,13 @@ textarea {
 
   .nav-links.is-open {
     display: flex;
+  }
+
+  .hero-slider,
+  .hero .slide,
+  .hero figcaption {
+    height: clamp(350px, calc(100vw - 130px), 750px);
+    min-height: clamp(350px, calc(100vw - 130px), 750px);
   }
 
   .nav-links a {
@@ -1373,12 +1387,6 @@ textarea {
     min-height: 300px;
   }
 
-  .hero-slider,
-  .hero .slide,
-  .hero figcaption {
-    height: 750px;
-    min-height: 750px;
-  }
 
   .modal-iframe {
     width: calc(100vw - 24px);
@@ -1394,14 +1402,5 @@ textarea {
     right: 10px;
     left: 10px;
     bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-slider,
-  .hero .slide,
-  .hero figcaption {
-    height: 350px;
-    min-height: 350px;
   }
 }
