@@ -87,6 +87,7 @@ Betroffene aktive Dateien:
 
 - Die drei Titelbilder besitzen Varianten mit 800px und 1200px Breite. Die 1900px-Originale bleiben als groesste Variante erhalten. `srcset` und `sizes` in `index.html` lassen den Browser die passende Datei auswaehlen.
 - Der Preload des ersten Titelbildes verwendet dieselbe `imagesrcset`-/`imagesizes`-Auswahl. Bei Aenderungen an diesem Bild muessen Preload und `img`-Tag zusammen angepasst werden.
+- Die CSS- und JavaScript-Links verwenden eine Versionskennung aus dem Datei-Hash. Nach Aenderungen an diesen Dateien die Kennung in index.html und fuer CSS auch in links.html aktualisieren, damit Browser keine alte Fassung aus dem Wochen-Cache verwenden.
 - Bilder unterhalb des Startbereichs verwenden `loading="lazy"`. Verdeckte Galerie-Slides tragen `data-src`; `js/main.js` setzt `src` erst beim Anzeigen des Bildes.
 - Die automatische Wiedergabe der Slider pausiert, solange der Slider ausserhalb des sichtbaren Bereichs liegt. Beim Wiedereintritt wird sie fortgesetzt.
 - Beim Austausch eines Titelbildes die 800px- und 1200px-WebP-Dateien erneut aus dem neuen Original erzeugen und alle drei Dateinamen in `srcset` sowie beim ersten Bild im Preload pruefen.
