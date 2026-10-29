@@ -72,6 +72,7 @@ Nach `671bada` wurden weitere Layout-, Navigations- und Formular-Korrekturen an 
 - Das strukturierte `LodgingBusiness`-Markup wurde erweitert: Beschreibung, Bilder, Logo, Adresse mit Region, Geo-Koordinaten, Preisrahmen, Ausstattungsmerkmale sowie `hasMap`/`sameAs` zum Google-Business-/Maps-Profil.
 - Im Kontaktbereich ist das Google-Profil sichtbar verlinkt. Zusaetzlich wurde ein Google-Bewertungslink im Kontaktbereich und im Erfolgsdialog der Anfrage eingebaut, ohne kuenstliche Bewertungs-/Sterne-Markups zu setzen.
 - Ein Abschnitt zum Radfahren am Mainradweg wurde mit passendem Foto und Navigationslink ergaenzt.
+- Der Footer-Link „Video ansehen“ fuehrt zum aktuellen YouTube-Video unter `https://www.youtube.com/watch?v=aHwgwRHoezM`.
 
 Betroffene aktive Dateien:
 
